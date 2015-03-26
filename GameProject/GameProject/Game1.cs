@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace GameProject
 {
+    /// Test commit
     /// <summary>
     /// This is the main type for your game
     /// </summary>

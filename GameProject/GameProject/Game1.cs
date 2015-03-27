@@ -126,6 +126,8 @@ namespace GameProject
                         e.isVisible = false;
                     }
                 }
+
+                e.Update(gameTime);
             }
 
             //UPDATE PLAYING STATE
@@ -337,7 +339,7 @@ namespace GameProject
             }
 
             //if any of enemies in the list were destroyed (or invisible), then remove from the list
-            for (int i = 0; i < asteroidList.Count; i++)
+            for (int i = 0; i < enemyList.Count; i++)
             {
                 if (!enemyList[i].isVisible)
                 {

@@ -5,12 +5,12 @@ namespace GameProject
     using System.Linq;
     using System.Text;
     using Microsoft.Xna.Framework;
-    //using Microsoft.Xna.Framework.Audio;
+    using Microsoft.Xna.Framework.Audio;
     using Microsoft.Xna.Framework.Content;
-    //using Microsoft.Xna.Framework.GamerServices;
+    using Microsoft.Xna.Framework.GamerServices;
     using Microsoft.Xna.Framework.Graphics;
     using Microsoft.Xna.Framework.Input;
-    //using Microsoft.Xna.Framework.Media;
+    using Microsoft.Xna.Framework.Media;
 
     public class Game1 : Microsoft.Xna.Framework.Game
     {
@@ -20,7 +20,7 @@ namespace GameProject
         public int enemmyBulletDamage;
 
         //Lists
-        List<Asteroid> asteoridList = new List<Asteroid>();
+        List<Asteroid> asteroidList = new List<Asteroid>();
         List<Enemy> enemyList = new List<Enemy>();
         List<Explosion> explosionList = new List<Explosion>();
 
@@ -60,7 +60,7 @@ namespace GameProject
         // Load Content
         protected override void UnloadContent()
         {
-            spriteBatch =new SpriteBatch (GraphicsDevice;)
+            spriteBatch = new SpriteBatch(GraphicsDevice);
  	
             hud.LoadContent(Content);
             p.LoadContent(Content);
@@ -79,6 +79,9 @@ namespace GameProject
             //Allows the game to exit 
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back = ButtonState.Pressed)
                 this.Exit();
+
+
+
             //Updating Enemy's and checking collision of enemyship or playership
             foreach (Enemy e in enemyList)
             {
@@ -119,15 +122,16 @@ namespace GameProject
             {
                 ex.Update(gameTime);
             }
+
             //for each asteroid in our asteroidList, update it and check for collisions
-            foreach (Asteroid a in asteoridList)
+            foreach (Asteroid a in asteroidList)
             {
 
                 //check if any asteroids are colliding with player
                 // if they are set visible to false
                 if (a.boundingBox.Intersects(p.boundingBox))
                 {
-                    p.health -= 20;
+                    p.health -= 20;// later make a variable asteroidDamage in the Asteroid class(could change if we put levels in the game);
                     a.isVisible = false;
                 }
                 //Iterate through our bulletList if any asteroids come in contacts with trhese bulets, destroy bulets and asteroids
@@ -138,7 +142,7 @@ namespace GameProject
                         explosionList.Add(new Explosion(Content.Load("explosion3"), new Vector2(a.position.X, a.position.Y)));
                         hud.playerScore += 5;
                         a.isVisible = false;
-                        p.bulletList.ElementAt(i).isVisible = false;
+                        p.bulletList.ElementAt(i).isVisible = false;// or p.bulletList[i], we'll see later what level of abstraction we'll need;
 
                     }
                 }
@@ -173,7 +177,7 @@ namespace GameProject
             }
 
 
-            foreach (Asteroid a in asteoridList)
+            foreach (Asteroid a in asteroidList)
             {
                 a.Draw(spriteBatch);
             }
@@ -196,17 +200,17 @@ namespace GameProject
 
 
             // If there less than 5 asteroids on the screen,then creat more untill there is 5 agin
-            if (asteoridList.Count() < 5)
+            if (asteroidList.Count() < 5)
             {
-                asteoridList.Add(new Asteroid(Content.Load<Texture2D>("asteroid"), new Vector2(randX, randY)));
+                asteroidList.Add(new Asteroid(Content.Load<Texture2D>("asteroid"), new Vector2(randX, randY)));
             }
 
             //if any of asteroids in the list were destroyed (or invisible), then remove from the list
-            for (int i = 0; i < asteoridList.Count; i++)
+            for (int i = 0; i < asteroidList.Count; i++)
             {
-                if (!asteoridList[i].isVisible)
+                if (!asteroidList[i].isVisible)
                 {
-                    asteoridList.RemoveAt(i);
+                    asteroidList.RemoveAt(i);
                     i--;
                 }
             }
@@ -221,13 +225,13 @@ namespace GameProject
 
 
             // If there less than 3 asteroids on the screen,then creat more untill there is 5 agin
-            if (asteoridList.Count() < 3)
+            if (asteroidList.Count() < 3)
             {
                 enemyList.Add(new Enemy(Content.Load<Texture2D>("enemyship"), new Vector2(randX, randY), Content.Load<Texture2D>("EnemyBullet")));
             }
 
             //if any of enemies in the list were destroyed (or invisible), then remove from the list
-            for (int i = 0; i < asteoridList.Count; i++)
+            for (int i = 0; i < asteroidList.Count; i++)
             {
                 if (!enemyList[i].isVisible)
                 {

@@ -25,7 +25,7 @@ namespace GameProject
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Random random = new Random();
-        public int enemmyBulletDamage;
+        public int enemyBulletDamage;
         public Texture2D menuImage;
 
         //Lists
@@ -51,7 +51,7 @@ namespace GameProject
             graphics.PreferredBackBufferHeight = 950;
             this.Window.Title = "Avocado TEAM SPACE SHOOTER";
             Content.RootDirectory = "Content";
-            enemmyBulletDamage = 10;
+            enemyBulletDamage = 10;
             menuImage = null;
         }
 
@@ -97,11 +97,40 @@ namespace GameProject
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back = ButtonState.Pressed)
                 this.Exit();
 
+            // Updating Enemies and checking collision of enemy ship to player ship
+            foreach (Enemy e in enemyList)
+            {
+                // Check if enemy ship is colliding with player
+                if (e.boundingBox.Intersects(p.boundingBox))
+                {
+                    p.health -= 40;
+                    e.isVisible = false;
+                }
+
+                // Check enemy bullet collision with player ship
+                for (int i = 0; i < e.bulletList.Count; i++)
+                {
+                    if (p.boundingBox.Intersects(e.bulletList[i].boundingBox))
+                    {
+                        p.health -= enemyBulletDamage;
+                        e.bulletList[i].isVisible = false;
+                    }
+                }
+
+                // Check player bullet collision to enemy ship
+                for (int i = 0; i < p.bulletList.Count; i++)
+                {
+                    if (p.bulletList[i].boundingBox.Intersects(e.boundingBox))
+                    {
+                        p.bulletList[i].isVisible = false;
+                        e.isVisible = false;
+                    }
+                }
+            }
 
             //UPDATE PLAYING STATE
             switch (gameState)
             {
-           
                 case State.Playing:
                     {
                         sf.speed = 5;
@@ -120,7 +149,7 @@ namespace GameProject
                             {
                                 if (p.boundingBox.Intersects(e.bulletList[i].boundingBox))
                                 {
-                                    p.health -= enemmyBulletDamage;
+                                    p.health -= enemyBulletDamage;
                                     e.bulletList[i].isVisible = false;
                                 }
                             }
@@ -292,8 +321,8 @@ namespace GameProject
                 }
             }
         }
-        // Load enemies
 
+        // Load enemies
         public void LoadEnemies()
         {
             //Creating random variables for our X and Y axis of our asteroids
@@ -301,8 +330,8 @@ namespace GameProject
             int randX = random.Next(0, 750);
 
 
-            // If there less than 3 asteroids on the screen,then creat more untill there is 5 agin
-            if (asteroidList.Count() < 3)
+            // If there less than 3 enemies on the screen, then create more untill there is 3 agin
+            if (enemyList.Count() < 3)
             {
                 enemyList.Add(new Enemy(Content.Load<Texture2D>("enemyship"), new Vector2(randX, randY), Content.Load<Texture2D>("EnemyBullet")));
             }

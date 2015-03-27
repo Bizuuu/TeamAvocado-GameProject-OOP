@@ -7,76 +7,81 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
+
 namespace GameProject
 {
     public class Player
     {
-        // fileds to add;
-        public Texture2D healthTexture;
-        public int health;
-        public Rectangle healthRectangle;
-        public Vector2 healthBarPosition;
-        public Rectangle boundingBox;
-        SoundManager sm = new SoundManager();
-        // fields to add;
+        public Texture2D texture;
+        public Vector2 position;
+        public int speed;
 
-        // Constructor
+        //Collision variables
+        public Rectangle boundingBox;
+        public bool isColliding;
+
+        //Constructor
         public Player()
         {
-            health = 200;// Later we'll put a constatnt in the class and use it;
-            healthBarPosition = new Vector2(50, 50); // Remove the magic numbers later - make the field readonly or something;
+            texture = null;
+            position = new Vector2(300, 300);
+            speed = 10;
+            isColliding = false;
         }
 
-        // Load content
-        public void LoadContent(ContentManager content)
+        //Load Content
+        public void LoadContent(ContentManager Content)
         {
-            // other things to load - for someone else to do;
-
-            healthTexture = content.Load<Texture2D>("Textures/healthbar");
-            sm.LoadContent(content);
+            texture = Content.Load<Texture2D>("ship");
         }
 
-        // Draw
+        //Draw
         public void Draw(SpriteBatch spriteBatch)
         {
-            // draw the player texture - for someone else to do;
-
-            spriteBatch.Draw(healthTexture, healthRectangle, Color.White);
-
-            // draw bullets - for someone else; 
+            spriteBatch.Draw(texture, position, Color.White);
         }
 
+        //Update
         public void Update(GameTime gameTime)
         {
-            // Getting keyboard state - for someone else to do;
+            //Getting keybord State
+            KeyboardState keyState = Keyboard.GetState();
 
-            // Bounding box for player spaceship
-            boundingBox = new Rectangle((int)this.position.X, (int)this.position.Y,
-              this.texture.Width, this.texture.Height); // position and texture will be implemented by someone else;
-
-            // Set rectangle for the health bar
-            healthRectangle = new Rectangle((int)healthBarPosition.X, (int)healthBarPosition.Y,
-                                                                  health, healthTexture.Height);
-        }
-
-        // Update bullet method;
-        public void UpdateBullets()
-        {
-            // For each bullet in the bullet list update movement, and if the bullet hits the top of the screen remove from list;
-            foreach (var bullet in bulletList) // field List<Bullet> bulletList is to be implemented by someone else;
+            //Ship Controls
+            if (keyState.IsKeyDown(Keys.W))
             {
-                // bounding box for every bullet in the bulletList;
-                bullet.boundingBox = new Rectangle((int)bullet.position.X, (int)bullet.position.Y,
-                    bullet.texture.Width, bullet.texture.Height);
-
-                // set movement for bullet - someone else will do it;
-
-                // if bullet hits the top od the screen - make visible false - for someone else to do;
+                position.Y = position.Y - speed;
+            }
+            if (keyState.IsKeyDown(Keys.A))
+            {
+                position.X = position.X - speed;
+            }
+            if (keyState.IsKeyDown(Keys.S))
+            {
+                position.Y = position.Y + speed;
+            }
+            if (keyState.IsKeyDown(Keys.D))
+            {
+                position.X = position.X + speed;
             }
 
-            // Iterate through the bulletList and if some bullet is not visible - remove it from list; - dor someone else to do;
+            //Keep player ship in screen bounds
+            if (position.X <= 0)
+            {
+                position.X = 0;
+            }
+            if (position.X >= 800 - texture.Width)
+            {
+                position.X = 800 - texture.Width;
+            }
+            if (position.Y <= 0)
+            {
+                position.Y = 0;
+            }
+            if (position.Y >= 950 - texture.Height)
+            {
+                position.Y = 950 - texture.Height;
+            }
         }
-
-
     }
 }

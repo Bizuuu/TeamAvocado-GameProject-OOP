@@ -1,0 +1,8 @@
+E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb
+E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\bin\x86\Debug\Content\space.xnb
+E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\bin\x86\Debug\GameProject.exe
+E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\bin\x86\Debug\GameProject.pdb
+E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\obj\x86\Debug\GameProject.csprojResolveAssemblyReference.cache
+E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\obj\x86\Debug\GameProject.exe
+E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\obj\x86\Debug\GameProject.pdb

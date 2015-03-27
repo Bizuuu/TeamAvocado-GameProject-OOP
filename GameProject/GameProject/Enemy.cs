@@ -22,6 +22,7 @@ namespace GameProject
         public bool isVisible;
         public List<Bullet> bulletList;
 
+        // Constructor
         public Enemy(Texture2D newTexture, Vector2 newPosition, Texture2D newBulletTexture)
         {
             bulletList = new List<Bullet>();
@@ -51,8 +52,11 @@ namespace GameProject
                 position.Y = -75;
             }
 
+            EnemyShoot();
+            UpdateBullets();
         }
         
+        // Draw
         public void Draw(SpriteBatch spriteBatch)
         {
             // Draw enemy ship
@@ -68,17 +72,17 @@ namespace GameProject
         public void UpdateBullets()
         {
             // For each bullet in the bullet list update movement, and if the bullet hits the top of the screen remove from list;
-            foreach (var bullet in bulletList) // field List<Bullet> bulletList is to be implemented by someone else;
+            foreach (Bullet b in bulletList)
             {
                 // bounding box for every bullet in the bulletList;
-                bullet.boundingBox = new Rectangle((int)bullet.position.X, (int)bullet.position.Y,
-                    bullet.texture.Width, bullet.texture.Height);
+                b.boundingBox = new Rectangle((int)b.position.X, (int)b.position.Y,
+                    b.texture.Width, b.texture.Height);
 
-                // set movement for bullet - someone else will do it;
-                b.position.Y = b.position.Y - b.speed;
+                // set movement for bullet
+                b.position.Y = b.position.Y + b.speed;
 
                 // if bullet hits the top od the screen - make visible false - 
-                if (b.position.Y <= 0)
+                if (b.position.Y >= 950)
                 {
                     b.isVisible = false;
                 }
@@ -92,6 +96,36 @@ namespace GameProject
                     bulletList.RemoveAt(i);
                     i--;
                 }
+            }
+        }
+
+        // Enemy shoot function
+        public void EnemyShoot()
+        {
+            // Shoot only if bulletdelay resets
+            if (bulletDelay >= 0)
+            {
+                bulletDelay--;
+            }
+
+            if (bulletDelay <= 0)
+            {
+                // Create new bullet and position it front and center of enemy ship
+                Bullet newBullet = new Bullet(bulletTexture);
+                newBullet.position = new Vector2(position.X + texture.Width / 2 - newBullet.texture.Width / 2, position.Y + 30);
+
+                newBullet.isVisible = true;
+
+                if (bulletList.Count < 20)
+                {
+                    bulletList.Add(newBullet);
+                }
+            }
+
+            // Reset bullet delay
+            if (bulletDelay == 0)
+            {
+                bulletDelay = 40;
             }
         }
     }

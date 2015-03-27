@@ -17,6 +17,7 @@ namespace GameProject
         public Rectangle healthRectangle;
         public Vector2 healthBarPosition;
         public Rectangle boundingBox;
+        SoundManager sm = new SoundManager();
         // fields to add;
 
         // Constructor
@@ -32,6 +33,7 @@ namespace GameProject
             // other things to load - for someone else to do;
 
             healthTexture = content.Load<Texture2D>("Textures/healthbar");
+            sm.LoadContent(content);
         }
 
         // Draw

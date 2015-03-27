@@ -17,6 +17,15 @@ namespace GameProject
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+
+        //state enum
+        public enum State
+        {
+            Menu,
+            Playing,
+            Gameover
+        }
+        
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 

@@ -23,7 +23,7 @@
             this.bulletList = new List<Bullet>();
             texture = null;
             position = new Vector2(300, 300);
-            this.bulletDelay = 20;
+            this.bulletDelay = 5;
             speed = 10;
             isColliding = false;
         }
@@ -50,6 +50,14 @@
         {
             //Getting keybord State
             KeyboardState keyState = Keyboard.GetState();
+
+            //Fire Bullets
+            if (keyState.IsKeyDown(Keys.Space))
+            {
+                Shoot();
+            }
+
+            UpdateBullets();
 
             //Ship Controls
             if (keyState.IsKeyDown(Keys.W))
@@ -102,6 +110,8 @@
             {
                 Bullet newBullet = new Bullet(bulletTexture);
                 newBullet.position = new Vector2(this.position.X + 32 - newBullet.texture.Width / 2, this.position.Y + 30);
+
+                //Making bullet visible
                 newBullet.isVisible = true;
 
                 if (this.bulletList.Count < 20)
@@ -113,7 +123,34 @@
             // reset delay
             if (this.bulletDelay == 0)
             {
-                this.bulletDelay = 20;
+                this.bulletDelay = 5;
+            }
+        }
+
+        public void UpdateBullets()
+        {
+            //for each bullet in our bulletlist: update the movement and if the bullet hits the top of the screen remove it from the list
+            foreach (Bullet b in bulletList)
+            {
+                //set movement for bullet
+                b.position.Y -= b.speed;
+
+                //if bullet hits the top of the screen, then make visible false
+                if (b.position.Y <= 0)
+                {
+                    b.isVisible = false;
+                }
+            }
+
+            //Iterate through bulletList and see if any of the bullets are not visible, if they arent then remove the bullet from our bullet List
+            for (int i = 0; i < bulletList.Count; i++)
+            {
+                if (!bulletList[i].isVisible)
+                {
+                    bulletList.RemoveAt(i);
+                    i--;
+                }
+
             }
         }
     }

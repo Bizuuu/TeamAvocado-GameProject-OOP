@@ -127,10 +127,11 @@
             }
         }
 
+        //Update Bullet Function
         public void UpdateBullets()
         {
             //for each bullet in our bulletlist: update the movement and if the bullet hits the top of the screen remove it from the list
-            foreach (Bullet b in bulletList)
+            foreach (Bullet b in this.bulletList)
             {
                 //set movement for bullet
                 b.position.Y -= b.speed;
@@ -138,16 +139,17 @@
                 //if bullet hits the top of the screen, then make visible false
                 if (b.position.Y <= 0)
                 {
+                   
                     b.isVisible = false;
                 }
             }
 
             //Iterate through bulletList and see if any of the bullets are not visible, if they arent then remove the bullet from our bullet List
-            for (int i = 0; i < bulletList.Count; i++)
+            for (int i = 0; i < this.bulletList.Count; i++)
             {
-                if (!bulletList[i].isVisible)
+                if (!this.bulletList[i].isVisible)
                 {
-                    bulletList.RemoveAt(i);
+                    this.bulletList.RemoveAt(i);
                     i--;
                 }
 

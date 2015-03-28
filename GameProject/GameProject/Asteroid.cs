@@ -1,5 +1,6 @@
 ﻿namespace GameProject
 {
+    using System;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
@@ -13,16 +14,22 @@
         public Vector2 origin;
         public float rotationAngle;
         public int speed;
-        public bool isColliding, destroyed;
+
+        public bool isVisible;
+        Random random = new Random();
+        public float randX, randY;
 
         // Constructor
-        public Asteroid()
+        public Asteroid(Texture2D newTexture, Vector2 newPosition)
         {
-            this.position = new Vector2(400, -50);
-            this.texture = null;
+            this.position = newPosition;
+            this.texture = newTexture;
             this.speed = 4;
-            this.isColliding = false;
-            this.destroyed = false;
+
+            this.isVisible = true;
+            this.randX = this.random.Next(0, 750);
+            this.randY = this.random.Next(-600, -50);
+
         }
 
         // Load Content
@@ -55,7 +62,7 @@
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            if (!this.destroyed)
+            if (!this.isVisible)
             {
                 spriteBatch.Draw(this.texture, this.position, null, Color.White, this.rotationAngle, this.origin, 1.0f, SpriteEffects.None, 0f);
             }

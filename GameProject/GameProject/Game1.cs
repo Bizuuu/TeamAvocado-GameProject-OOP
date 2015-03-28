@@ -16,11 +16,15 @@ namespace GameProject
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Random random = new Random();
 
+        //Asteroid List
+        List<Asteroid> asteroidList = new List<Asteroid>();
 
+        //Instanting our player and starfield objects
         Player p = new Player();
         Starfield sf = new Starfield();
-        Asteroid asteroid = new Asteroid();
+
 
         //Constructor
         public Game1()
@@ -44,7 +48,7 @@ namespace GameProject
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            asteroid.LoadContent(Content);
+
             p.LoadContent(Content);
             sf.LoadContent(Content);
         }
@@ -57,12 +61,21 @@ namespace GameProject
         //Update
         protected override void Update(GameTime gameTime)
         {
+            //Allows the Game to wxit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            asteroid.Update(gameTime);
+            //for each asteroid in our asteroidList, Update it
+            foreach (Asteroid a in this.asteroidList)
+            {
+                a.Update(gameTime);
+
+            }
+
+
             p.Update(gameTime);
             sf.Update(gameTime);
+            LoadAsteroids();
 
             base.Update(gameTime);
         }
@@ -74,12 +87,41 @@ namespace GameProject
             spriteBatch.Begin();
 
             sf.Draw(spriteBatch);
-            asteroid.Draw(spriteBatch);
             p.Draw(spriteBatch);
+
+            foreach (Asteroid a in this.asteroidList)
+            {
+                a.Draw(spriteBatch);
+
+            }
 
             spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+
+        public void LoadAsteroids()
+        {
+            //Creating random variables for X and Y axis of our asteroids
+            int randY = this.random.Next(-600, -50);
+            int randX = this.random.Next(0, 750);
+
+            //if there are less than 5 asteroids on the screen, then create more until there are 5 again
+            if (this.asteroidList.Count() < 5)
+            {
+                this.asteroidList.Add(new Asteroid(Content.Load<Texture2D>("asteroid"), new Vector2(randX, randY)));
+            }
+
+            //If any of the asteroids in the list were destroyed (or invisible), then remove them from the list
+            for (int i = 0; i < this.asteroidList.Count; i++)
+            {
+                if (!this.asteroidList[i].isVisible)
+                {
+                    this.asteroidList.RemoveAt(i);
+                    i--;
+                }
+            }
+
         }
     }
 }

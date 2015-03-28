@@ -51,18 +51,17 @@ namespace GameProject
             }
 
             // Rotate asteriod
-            // float elapsed = (float)GameTime.ElapsedGameTime.TotalSeconds;
-            // this.rotationAngle += elapsed;
-            // float circle = MathHelper.Pi * 2;
-            // this.rotationAngle = this.rotationAngle % circle;
+            float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            this.rotationAngle += elapsed;
+            float circle = MathHelper.Pi * 2;
+            this.rotationAngle = this.rotationAngle % circle;
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
             if (!this.destroyed)
             {
-                //spriteBatch.Draw(this.texture, this.position, null, Color.White, this.rotationAngle, this.origin, 1.0f, SpriteEffects.None, 0f);
-                spriteBatch.Draw(this.texture, this.position, Color.White);
+                spriteBatch.Draw(this.texture, this.position, null, Color.White, this.rotationAngle, this.origin, 1.0f, SpriteEffects.None, 0f);
             }
         }
     }

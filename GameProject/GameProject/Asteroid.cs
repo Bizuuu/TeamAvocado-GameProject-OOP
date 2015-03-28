@@ -22,47 +22,47 @@ namespace GameProject
         // Constructor
         public Asteroid()
         {
-            position = new Vector2(400, -50);
-            texture = null;
-            speed = 4;
-            isColliding = false;
-            destroyed = false;
+            this.position = new Vector2(400, -50);
+            this.texture = null;
+            this.speed = 4;
+            this.isColliding = false;
+            this.destroyed = false;
         }
 
         // Load Content
         public void LoadContent(ContentManager content)
         {
-            texture = content.Load<Texture2D>("asteroid");
-            origin.X = texture.Width / 2;
-            origin.Y = texture.Height / 2;
+            this.texture = content.Load<Texture2D>("asteroid");
+            this.origin.X = this.texture.Width / 2;
+            this.origin.Y = this.texture.Height / 2;
         }
 
         // Update
         public void Update(GameTime gameTime)
         {
             // Set bounding box for collision
-            boundingBox = new Rectangle((int)position.X, (int)position.Y, 45, 45);
+            this.boundingBox = new Rectangle((int)this.position.X, (int)this.position.Y, 45, 45);
 
             // update movement
-            position.Y = position.Y + speed;
-            if (position.Y >= 950)
+            this.position.Y = this.position.Y + speed;
+            if (this.position.Y >= 950)
             {
-                position.Y = -50;
+                this.position.Y = -50;
             }
 
             // Rotate asteriod
             // float elapsed = (float)GameTime.ElapsedGameTime.TotalSeconds;
-            // rotationAngle += elapsed;
+            // this.rotationAngle += elapsed;
             // float circle = MathHelper.Pi * 2;
-            // rotationAngle = rotationAngle % circle;
+            // this.rotationAngle = this.rotationAngle % circle;
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            if (!destroyed)
+            if (!this.destroyed)
             {
-                //spriteBatch.Draw(texture, position, null, Color.White, rotationAngle, origin, 1.0f, SpriteEffects.None, 0f);
-                spriteBatch.Draw(texture, position, Color.White);
+                //spriteBatch.Draw(this.texture, this.position, null, Color.White, this.rotationAngle, this.origin, 1.0f, SpriteEffects.None, 0f);
+                spriteBatch.Draw(this.texture, this.position, Color.White);
             }
         }
     }

@@ -20,6 +20,7 @@ namespace GameProject
 
         //Asteroid List
         List<Asteroid> asteroidList = new List<Asteroid>();
+        List<Enemy> enemyList = new List<Enemy>();   
 
         //Instanting our player and starfield objects
         Player p = new Player();
@@ -65,11 +66,28 @@ namespace GameProject
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            //for each asteroid in our asteroidList, Update it
-            foreach (Asteroid a in this.asteroidList)
+            //for each asteroid in our asteroidList, update it and check for collisions
+            foreach (Asteroid a in asteroidList)
             {
-                a.Update(gameTime);
 
+                //check if any asteroids are colliding with player
+                // if they are set visible to false
+                if (a.boundingBox.Intersects(p.boundingBox))
+                {
+                    p.health -= 20;// later make a variable asteroidDamage in the Asteroid class(could change if we put levels in the game);
+                    a.isVisible = false;
+                }
+                //Iterate through our bulletList if any asteroids come in contacts with trhese bulets, destroy bulets and asteroids
+                for (int i = 0; i < p.bulletList.Count; i++)
+                {
+                    if (a.boundingBox.Intersects(p.bulletList[i].boundingBox))
+                    {                        
+                        a.isVisible = false;
+                        p.bulletList.ElementAt(i).isVisible = false;// or p.bulletList[i], we'll see later what level of abstraction we'll need;
+
+                    }
+                }
+                a.Update(gameTime);
             }
 
 
@@ -121,7 +139,6 @@ namespace GameProject
                     i--;
                 }
             }
-
         }
     }
 }

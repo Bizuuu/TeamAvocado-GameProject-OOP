@@ -17,6 +17,11 @@
         public bool isColliding;
         public List<Bullet> bulletList;
 
+        public Texture2D healthTexture;
+        public int health;
+        public Rectangle healthRectangle;
+        public Vector2 healthBarPosition;
+
         //Constructor
         public Player()
         {
@@ -26,6 +31,8 @@
             this.bulletDelay = 5;
             speed = 10;
             isColliding = false;
+            health = 200;// Later we'll put a constatnt in the class and use it;
+            healthBarPosition = new Vector2(50, 50); // Remove the magic numbers later - make the field readonly or something;
         }
 
         //Load Content
@@ -33,12 +40,16 @@
         {
             texture = Content.Load<Texture2D>("ship");
             bulletTexture = Content.Load<Texture2D>("playerbullet");
+            healthTexture = Content.Load<Texture2D>("healthbar");
         }
 
         //Draw
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(texture, position, Color.White);
+
+            spriteBatch.Draw(healthTexture, healthRectangle, Color.White);
+
             foreach (Bullet bul in this.bulletList)
             {
                 bul.Draw(spriteBatch);
@@ -51,6 +62,14 @@
             //Getting keybord State
             KeyboardState keyState = Keyboard.GetState();
 
+            // Bounding box for player spaceship
+            boundingBox = new Rectangle((int)this.position.X, (int)this.position.Y,
+              this.texture.Width, this.texture.Height);
+
+            // Set rectangle for the health bar
+            healthRectangle = new Rectangle((int)healthBarPosition.X, (int)healthBarPosition.Y,
+                                                                  health, healthTexture.Height);
+                        
             //Fire Bullets
             if (keyState.IsKeyDown(Keys.Space))
             {
@@ -133,13 +152,17 @@
             //for each bullet in our bulletlist: update the movement and if the bullet hits the top of the screen remove it from the list
             foreach (Bullet b in this.bulletList)
             {
+                // bounding box for every bullet in the bulletList;
+                b.boundingBox = new Rectangle((int)b.position.X, (int)b.position.Y,
+                    b.texture.Width, b.texture.Height);
+
                 //set movement for bullet
                 b.position.Y -= b.speed;
 
                 //if bullet hits the top of the screen, then make visible false
                 if (b.position.Y <= 0)
                 {
-                   
+
                     b.isVisible = false;
                 }
             }

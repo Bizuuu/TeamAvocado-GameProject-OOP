@@ -28,6 +28,15 @@
       <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb</Output>
       <Time>2015-03-28T15:52:27.0446589+02:00</Time>
     </Item>
+    <Item>
+      <Source>playerbullet.png</Source>
+      <Name>playerbullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb</Output>
+      <Time>2015-03-28T16:38:38.3451682+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2C9D39BF-D141-44D5-A181-AAD737E60C9C}</ContentProjectGUID>

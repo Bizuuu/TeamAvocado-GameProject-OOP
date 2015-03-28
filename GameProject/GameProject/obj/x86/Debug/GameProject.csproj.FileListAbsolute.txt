@@ -15,3 +15,4 @@ C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\ob
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.exe
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.pdb
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb

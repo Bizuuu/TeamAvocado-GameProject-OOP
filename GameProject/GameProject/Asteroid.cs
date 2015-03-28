@@ -62,7 +62,7 @@
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            if (!this.isVisible)
+            if (this.isVisible)
             {
                 spriteBatch.Draw(this.texture, this.position, null, Color.White, this.rotationAngle, this.origin, 1.0f, SpriteEffects.None, 0f);
             }

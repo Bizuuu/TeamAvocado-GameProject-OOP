@@ -20,6 +20,7 @@ namespace GameProject
 
         Player p = new Player();
         Starfield sf = new Starfield();
+        Asteroid asteroid = new Asteroid();
 
         //Constructor
         public Game1()
@@ -43,6 +44,7 @@ namespace GameProject
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            asteroid.LoadContent(Content);
             p.LoadContent(Content);
             sf.LoadContent(Content);
         }
@@ -58,7 +60,7 @@ namespace GameProject
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-
+            asteroid.Update(gameTime);
             p.Update(gameTime);
             sf.Update(gameTime);
 
@@ -72,6 +74,7 @@ namespace GameProject
             spriteBatch.Begin();
 
             sf.Draw(spriteBatch);
+            asteroid.Draw(spriteBatch);
             p.Draw(spriteBatch);
 
             spriteBatch.End();

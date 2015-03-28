@@ -6,3 +6,12 @@ E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\obj\x86\Debug\GamePr
 E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\obj\x86\Debug\GameProject.exe
 E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\obj\x86\Debug\GameProject.pdb
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\GameProject.exe
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\GameProject.pdb
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.csprojResolveAssemblyReference.cache
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.exe
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.pdb
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb

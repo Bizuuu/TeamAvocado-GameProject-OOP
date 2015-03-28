@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb</Output>
-      <Time>2015-03-28T01:42:53.9446509+02:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb</Output>
+      <Time>2015-03-28T15:31:49.0198479+02:00</Time>
     </Item>
     <Item>
       <Source>space.png</Source>
@@ -16,8 +16,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\bin\x86\Debug\Content\space.xnb</Output>
-      <Time>2015-03-28T01:43:03.597203+02:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb</Output>
+      <Time>2015-03-28T15:31:49.020848+02:00</Time>
+    </Item>
+    <Item>
+      <Source>asteroid.png</Source>
+      <Name>asteroid</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb</Output>
+      <Time>2015-03-28T15:52:27.0446589+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -26,10 +35,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProjectContent\</RootDirectory>
-      <LoggerRootDirectory>E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\</LoggerRootDirectory>
-      <IntermediateDirectory>E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>E:\Desktop\f1ckthisshit\GameProject\GameProject\GameProject\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -58,7 +67,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-03-25T10:03:47.8333594+02:00</Value>
+        <Value>2015-03-28T15:39:28.2031117+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

@@ -22,11 +22,12 @@ namespace GameProject
         //Asteroid List
         List<Asteroid> asteroidList = new List<Asteroid>();
         List<Enemy> enemyList = new List<Enemy>();
+        List<Explosion> explosionList = new List<Explosion>();
 
         //Instanting our player and starfield objects
         Player p = new Player();
         Starfield sf = new Starfield();
-
+        HUD hud = new HUD();
 
         //Constructor
         public Game1()
@@ -51,7 +52,7 @@ namespace GameProject
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-
+            hud.LoadContent(Content);
             p.LoadContent(Content);
             sf.LoadContent(Content);
         }
@@ -93,12 +94,18 @@ namespace GameProject
                 {
                     if (p.bulletList[i].boundingBox.Intersects(e.boundingBox))
                     {
+                        explosionList.Add(new Explosion(Content.Load<Texture2D>("explosion3"), new Vector2(e.position.X, e.position.Y)));
+                        hud.playerScore += 20;
                         p.bulletList[i].isVisible = false;
                         e.isVisible = false;
                     }
                 }
 
                 e.Update(gameTime);
+            }
+            foreach(Explosion ex in explosionList)
+            {
+                ex.Update(gameTime);
             }
 
             //for each asteroid in our asteroidList, update it and check for collisions
@@ -117,6 +124,8 @@ namespace GameProject
                 {
                     if (a.boundingBox.Intersects(p.bulletList[i].boundingBox))
                     {
+                        explosionList.Add(new Explosion(Content.Load<Texture2D>("explosion3"), new Vector2(a.position.X, a.position.Y)));
+                        hud.playerScore += 5;
                         a.isVisible = false;
                         p.bulletList.ElementAt(i).isVisible = false;// or p.bulletList[i], we'll see later what level of abstraction we'll need;
 
@@ -125,9 +134,10 @@ namespace GameProject
                 a.Update(gameTime);
             }
 
-
+            hud.Update(gameTime);
             p.Update(gameTime);
             sf.Update(gameTime);
+            ManageExplosions();
             LoadAsteroids();
             LoadEnemies();
 
@@ -143,6 +153,11 @@ namespace GameProject
             sf.Draw(spriteBatch);
             p.Draw(spriteBatch);
 
+            foreach (Explosion ex in explosionList)
+            {
+                ex.Draw(spriteBatch);
+            }
+             
             foreach (Asteroid a in this.asteroidList)
             {
                 a.Draw(spriteBatch);
@@ -154,6 +169,7 @@ namespace GameProject
                 e.Draw(spriteBatch);
             }
 
+            hud.Draw(spriteBatch); 
             spriteBatch.End();
 
             base.Draw(gameTime);
@@ -207,5 +223,18 @@ namespace GameProject
                 }
             }
         }
+        //Manage Explosions
+        public void ManageExplosions()
+        {
+            for (int i = 0; i < explosionList.Count; i++)
+            {
+                if (!explosionList[i].isVisible)
+                {
+                    explosionList.RemoveAt(i);
+                    i--;
+                }
+            }
+        }
+
     }
 }

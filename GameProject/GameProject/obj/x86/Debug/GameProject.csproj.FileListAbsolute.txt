@@ -63,3 +63,5 @@ D:\Telerik\GITAvocado\GameProject\GameProject\obj\x86\Debug\GameProject.csprojRe
 D:\Telerik\GITAvocado\GameProject\GameProject\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\Telerik\GITAvocado\GameProject\GameProject\obj\x86\Debug\GameProject.exe
 D:\Telerik\GITAvocado\GameProject\GameProject\obj\x86\Debug\GameProject.pdb
+D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\georgia.xnb
+D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\explosion3.xnb

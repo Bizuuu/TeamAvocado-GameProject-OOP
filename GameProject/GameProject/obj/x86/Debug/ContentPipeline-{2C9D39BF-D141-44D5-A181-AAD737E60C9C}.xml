@@ -64,6 +64,24 @@
       <Output>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb</Output>
       <Time>2015-03-29T11:25:28.7534274+03:00</Time>
     </Item>
+    <Item>
+      <Source>georgia.spritefont</Source>
+      <Name>georgia</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\georgia.xnb</Output>
+      <Time>2015-03-29T12:47:55.3499843+03:00</Time>
+    </Item>
+    <Item>
+      <Source>explosion3.png</Source>
+      <Name>explosion3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\explosion3.xnb</Output>
+      <Time>2015-03-29T13:09:14.412685+03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{2C9D39BF-D141-44D5-A181-AAD737E60C9C}</ContentProjectGUID>

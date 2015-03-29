@@ -33,7 +33,7 @@ namespace GameProject
             bulletDelay = 40;// later a variable, changing according to the level;
 
             speed = 5;
-            isVisible = false;
+            isVisible = true;
         }
 
         // Update

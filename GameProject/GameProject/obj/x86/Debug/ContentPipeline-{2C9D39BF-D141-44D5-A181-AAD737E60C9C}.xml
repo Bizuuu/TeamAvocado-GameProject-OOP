@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb</Output>
-      <Time>2015-03-28T19:04:47.5408457+02:00</Time>
+      <Output>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb</Output>
+      <Time>2015-03-29T11:25:28.8159257+03:00</Time>
     </Item>
     <Item>
       <Source>space.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb</Output>
-      <Time>2015-03-28T19:04:47.5418473+02:00</Time>
+      <Output>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\space.xnb</Output>
+      <Time>2015-03-29T11:25:28.8159257+03:00</Time>
     </Item>
     <Item>
       <Source>asteroid.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb</Output>
-      <Time>2015-03-28T19:04:47.5388444+02:00</Time>
+      <Output>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb</Output>
+      <Time>2015-03-29T11:25:28.8003047+03:00</Time>
     </Item>
     <Item>
       <Source>playerbullet.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb</Output>
-      <Time>2015-03-28T19:04:47.5408457+02:00</Time>
+      <Output>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb</Output>
+      <Time>2015-03-29T11:25:28.8159257+03:00</Time>
     </Item>
     <Item>
       <Source>healthbar.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb</Output>
-      <Time>2015-03-29T10:11:05.3982+03:00</Time>
+      <Output>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb</Output>
+      <Time>2015-03-29T11:25:28.8003047+03:00</Time>
     </Item>
     <Item>
       <Source>enemyship.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\enemyship.xnb</Output>
-      <Time>2015-03-29T10:59:51.4413941+03:00</Time>
+      <Output>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\enemyship.xnb</Output>
+      <Time>2015-03-29T11:25:28.8003047+03:00</Time>
     </Item>
     <Item>
       <Source>EnemyBullet.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb</Output>
-      <Time>2015-03-29T11:14:14.4442835+03:00</Time>
+      <Output>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb</Output>
+      <Time>2015-03-29T11:25:28.7534274+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -71,10 +71,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\</RootDirectory>
-      <LoggerRootDirectory>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\Telerik\GITAvocado\GameProject\GameProjectContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Telerik\GITAvocado\GameProject\GameProject\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Telerik\GITAvocado\GameProject\GameProject\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\Telerik\GITAvocado\GameProject\GameProject\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -103,7 +103,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-02-15T12:43:22.1035842+02:00</Value>
+        <Value>2015-03-26T11:06:52.4711127+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

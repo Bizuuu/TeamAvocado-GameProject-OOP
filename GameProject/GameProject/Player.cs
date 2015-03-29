@@ -21,6 +21,7 @@
         public int health;
         public Rectangle healthRectangle;
         public Vector2 healthBarPosition;
+        SoundManager sm = new SoundManager();
 
         //Constructor
         public Player()
@@ -41,6 +42,7 @@
             texture = Content.Load<Texture2D>("ship");
             bulletTexture = Content.Load<Texture2D>("playerbullet");
             healthTexture = Content.Load<Texture2D>("healthbar");
+            sm.LoadContent(Content);
         }
 
         //Draw
@@ -127,6 +129,7 @@
             // if bullet delay is at 0, create new bullet
             if (bulletDelay <= 0)
             {
+                sm.playerShootSound.Play();
                 Bullet newBullet = new Bullet(bulletTexture);
                 newBullet.position = new Vector2(this.position.X + 32 - newBullet.texture.Width / 2, this.position.Y + 30);
 
@@ -142,7 +145,7 @@
             // reset delay
             if (this.bulletDelay == 0)
             {
-                this.bulletDelay = 5;
+                this.bulletDelay = 5; // will be a const later;
             }
         }
 

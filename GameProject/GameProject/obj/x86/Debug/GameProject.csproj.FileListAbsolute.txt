@@ -37,3 +37,16 @@ C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\Game
 C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.exe
 C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.pdb
 C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\GameProject.exe
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\GameProject.pdb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.csprojResolveAssemblyReference.cache
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.exe
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.pdb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\enemyship.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb

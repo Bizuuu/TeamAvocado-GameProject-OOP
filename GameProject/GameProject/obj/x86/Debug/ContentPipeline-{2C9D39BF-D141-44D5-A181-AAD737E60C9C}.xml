@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb</Output>
-      <Time>2015-03-29T00:33:59.8186403+02:00</Time>
+      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb</Output>
+      <Time>2015-03-28T19:04:47.5408457+02:00</Time>
     </Item>
     <Item>
       <Source>space.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb</Output>
-      <Time>2015-03-29T00:33:59.8677239+02:00</Time>
+      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb</Output>
+      <Time>2015-03-28T19:04:47.5418473+02:00</Time>
     </Item>
     <Item>
       <Source>asteroid.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb</Output>
-      <Time>2015-03-29T00:33:59.7666369+02:00</Time>
+      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb</Output>
+      <Time>2015-03-28T19:04:47.5388444+02:00</Time>
     </Item>
     <Item>
       <Source>playerbullet.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb</Output>
-      <Time>2015-03-29T00:33:59.8126414+02:00</Time>
+      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb</Output>
+      <Time>2015-03-28T19:04:47.5408457+02:00</Time>
     </Item>
     <Item>
       <Source>healthbar.png</Source>
@@ -43,8 +43,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb</Output>
-      <Time>2015-03-29T00:43:20.3321687+02:00</Time>
+      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb</Output>
+      <Time>2015-03-29T10:11:05.3982+03:00</Time>
+    </Item>
+    <Item>
+      <Source>enemyship.png</Source>
+      <Name>enemyship</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\enemyship.xnb</Output>
+      <Time>2015-03-29T10:59:51.4413941+03:00</Time>
+    </Item>
+    <Item>
+      <Source>EnemyBullet.png</Source>
+      <Name>EnemyBullet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb</Output>
+      <Time>2015-03-29T11:14:14.4442835+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -53,10 +71,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\</RootDirectory>
+      <LoggerRootDirectory>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -84,8 +102,8 @@
         <Value>2011-09-01T17:22:30+03:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-03-23T17:22:03.8582065+02:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-02-15T12:43:22.1035842+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

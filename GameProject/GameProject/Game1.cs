@@ -17,10 +17,11 @@ namespace GameProject
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Random random = new Random();
+        public int enemyBulletDamage;
 
         //Asteroid List
         List<Asteroid> asteroidList = new List<Asteroid>();
-        List<Enemy> enemyList = new List<Enemy>();   
+        List<Enemy> enemyList = new List<Enemy>();
 
         //Instanting our player and starfield objects
         Player p = new Player();
@@ -36,6 +37,7 @@ namespace GameProject
             graphics.PreferredBackBufferHeight = 950;
             this.Window.Title = "XNA 2D Space Shooter";
             Content.RootDirectory = "Content";
+            enemyBulletDamage = 10;
         }
 
         //Init
@@ -62,9 +64,42 @@ namespace GameProject
         //Update
         protected override void Update(GameTime gameTime)
         {
-            //Allows the Game to wxit
+            //Allows the Game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+
+            // Updating Enemies and checking collision of enemy ship to player ship
+            foreach (Enemy e in enemyList)
+            {
+                // Check if enemyship is colliding with player
+                if (e.boundingBox.Intersects(p.boundingBox))
+                {
+                    p.health -= 40;
+                    e.isVisible = false;
+                }
+
+                // Check enemy bullet collision with player ship
+                for (int i = 0; i < e.bulletList.Count; i++)
+                {
+                    if (p.boundingBox.Intersects(e.bulletList[i].boundingBox))
+                    {
+                        p.health -= enemyBulletDamage;
+                        e.bulletList[i].isVisible = false;
+                    }
+                }
+
+                // Check player bullet collision to enemy ship
+                for (int i = 0; i < p.bulletList.Count; i++)
+                {
+                    if (p.bulletList[i].boundingBox.Intersects(e.boundingBox))
+                    {
+                        p.bulletList[i].isVisible = false;
+                        e.isVisible = false;
+                    }
+                }
+
+                e.Update(gameTime);
+            }
 
             //for each asteroid in our asteroidList, update it and check for collisions
             foreach (Asteroid a in asteroidList)
@@ -81,7 +116,7 @@ namespace GameProject
                 for (int i = 0; i < p.bulletList.Count; i++)
                 {
                     if (a.boundingBox.Intersects(p.bulletList[i].boundingBox))
-                    {                        
+                    {
                         a.isVisible = false;
                         p.bulletList.ElementAt(i).isVisible = false;// or p.bulletList[i], we'll see later what level of abstraction we'll need;
 
@@ -94,6 +129,7 @@ namespace GameProject
             p.Update(gameTime);
             sf.Update(gameTime);
             LoadAsteroids();
+            LoadEnemies();
 
             base.Update(gameTime);
         }
@@ -113,11 +149,17 @@ namespace GameProject
 
             }
 
+            foreach (Enemy e in enemyList)
+            {
+                e.Draw(spriteBatch);
+            }
+
             spriteBatch.End();
 
             base.Draw(gameTime);
         }
 
+        // Load Asteroids
         public void LoadAsteroids()
         {
             //Creating random variables for X and Y axis of our asteroids
@@ -136,6 +178,32 @@ namespace GameProject
                 if (!this.asteroidList[i].isVisible)
                 {
                     this.asteroidList.RemoveAt(i);
+                    i--;
+                }
+            }
+        }
+
+        // Load Enemies
+        // Load enemies
+        public void LoadEnemies()
+        {
+            //Creating random variables for our X and Y axis of our asteroids
+            int randY = random.Next(-600, -50);
+            int randX = random.Next(0, 750);
+
+
+            // If there less than 3 enemies on the screen, then create more untill there is 3 agin
+            if (enemyList.Count() < 3)
+            {
+                enemyList.Add(new Enemy(Content.Load<Texture2D>("enemyship"), new Vector2(randX, randY), Content.Load<Texture2D>("EnemyBullet")));
+            }
+
+            //if any of enemies in the list were destroyed (or invisible), then remove from the list
+            for (int i = 0; i < enemyList.Count; i++)
+            {
+                if (!enemyList[i].isVisible)
+                {
+                    enemyList.RemoveAt(i);
                     i--;
                 }
             }

@@ -149,7 +149,7 @@ namespace GameProject
 
             }
 
-            foreach (Enemy e in enemyList)
+            foreach (Enemy e in this.enemyList)
             {
                 e.Draw(spriteBatch);
             }
@@ -184,7 +184,6 @@ namespace GameProject
         }
 
         // Load Enemies
-        // Load enemies
         public void LoadEnemies()
         {
             //Creating random variables for our X and Y axis of our asteroids

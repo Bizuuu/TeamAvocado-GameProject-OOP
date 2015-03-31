@@ -74,6 +74,24 @@
       <Time>2015-03-29T14:29:59.3780617+03:00</Time>
     </Item>
     <Item>
+      <Source>menuScreen.png</Source>
+      <Name>menuScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\menuScreen.xnb</Output>
+      <Time>2015-03-29T15:26:49.6002912+03:00</Time>
+    </Item>
+    <Item>
+      <Source>gameOverScreen.png</Source>
+      <Name>gameOverScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\gameOverScreen.xnb</Output>
+      <Time>2015-03-29T17:46:42.7678017+03:00</Time>
+    </Item>
+    <Item>
       <Source>georgia.spritefont</Source>
       <Name>georgia</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -111,13 +129,22 @@
       <Time>2015-03-29T14:41:24.2211006+03:00</Time>
     </Item>
     <Item>
-      <Source>menuScreen.png</Source>
-      <Name>menuScreen</Name>
+      <Source>damageBonus.png</Source>
+      <Name>damageBonus</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\menuScreen.xnb</Output>
-      <Time>2015-03-29T15:26:49.6002912+03:00</Time>
+      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\damageBonus.xnb</Output>
+      <Time>2015-03-30T23:16:59.2540921+03:00</Time>
+    </Item>
+    <Item>
+      <Source>healthBonus.png</Source>
+      <Name>healthBonus</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthBonus.xnb</Output>
+      <Time>2015-03-31T14:23:05.479542+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

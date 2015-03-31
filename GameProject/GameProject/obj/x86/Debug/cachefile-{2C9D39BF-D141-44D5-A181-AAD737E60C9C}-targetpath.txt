@@ -6,9 +6,12 @@ Content\healthbar.xnb
 Content\enemyship.xnb
 Content\EnemyBullet.xnb
 Content\explosion3.xnb
+Content\menuScreen.xnb
+Content\gameOverScreen.xnb
 Content\georgia.xnb
 Content\Theme.xnb
 Content\Theme.wma
 Content\Laser.xnb
 Content\Blast.xnb
-Content\menuScreen.xnb
+Content\damageBonus.xnb
+Content\healthBonus.xnb

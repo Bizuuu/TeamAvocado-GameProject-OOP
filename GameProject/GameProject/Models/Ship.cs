@@ -60,6 +60,18 @@
 
         public abstract void UpdateProjectiles();
 
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            // Draw ship
+            spriteBatch.Draw(this.Texture, this.Position, Color.White);
+
+            // Draw ship's bullets
+            foreach (Ammunition b in this.BulletList)
+            {
+                b.Draw(spriteBatch);
+            }
+        }
+
         public void ClearBullets()
         {
             this.bulletList.Clear();
@@ -77,10 +89,6 @@
         protected void RemoveBulletAtPosition(int bulletPosition)
         {
             this.bulletList.RemoveAt(bulletPosition);
-        }
-
-
-
-        public abstract override void Draw(SpriteBatch spriteBatch);
+        }        
     }
 }

@@ -29,7 +29,7 @@ namespace GameProject
 
         // Fields
         private List<Asteroid> asteroidList;
-        private List<Enemy> enemyList;
+        private List<IEnemy> enemyList;
         private List<Explosion> explosionList;
         private List<BonusObject> bonusesList;
 
@@ -46,7 +46,7 @@ namespace GameProject
             this.Player = new Player();
             this.Hud = new HUD();
             this.asteroidList = new List<Asteroid>();
-            this.enemyList = new List<Enemy>();
+            this.enemyList = new List<IEnemy>();
             this.bonusesList = new List<BonusObject>();
             this.explosionList = new List<Explosion>();
             this.RandomGenerator = new Random();
@@ -66,7 +66,7 @@ namespace GameProject
         public State GameState { get; private set; }
         public Random RandomGenerator { get; private set; }
         public List<Asteroid> AsteroidList { get { return new List<Asteroid>(this.asteroidList); } }
-        public List<Enemy> EnemyList { get { return new List<Enemy>(this.enemyList); } }
+        public List<IEnemy> EnemyList { get { return new List<IEnemy>(this.enemyList); } }
         public List<Explosion> ExplosionList { get { return new List<Explosion>(this.explosionList); } }
         public List<BonusObject> BonusesList { get { return new List<BonusObject>(this.bonusesList); } }
 
@@ -118,7 +118,7 @@ namespace GameProject
                     {
                         sf.Speed = Starfield.StarfieldSpeed;
                         // Updating Enemies and checking collision of enemy ship to player ship
-                        foreach (Enemy e in this.EnemyList) // Polymorphism - accessing the child class of Enemy prop's and methods; 
+                        foreach (IEnemy e in this.EnemyList) // Polymorphism - accessing the child class of Enemy prop's and methods; 
                         {
                             // Check if enemyship is colliding with player
                             if (e.BoundingBox.Intersects(Player.BoundingBox))
@@ -214,8 +214,8 @@ namespace GameProject
                             this.GameState = State.Gameover;
                         }
 
-                        Hud.Update(gameTime);
-                        Player.Update(gameTime);
+                        this.Hud.Update(gameTime);
+                        this.Player.Update(gameTime);
                         sf.Update(gameTime);
                         ManageExplosions();
                         LoadAsteroids();
@@ -233,12 +233,12 @@ namespace GameProject
                         {
                             this.enemyList.Clear();
                             this.asteroidList.Clear();
-                            Player.ClearBullets();
+                            this.Player.ClearBullets();
                             this.bonusesList.Clear();
                             this.explosionList.Clear();
-                            Player.ResetStartPosition();
-                            Player.Health = 200;
-                            Hud.PlayerScore = HUD.InititalPlayerScore;
+                            this.Player.ResetStartPosition();
+                            this.Player.Health = Player.InitialPlayerHealth;
+                            this.Hud.PlayerScore = HUD.InititalPlayerScore;
                             this.GameState = State.Menu;
                         }
 
@@ -281,9 +281,9 @@ namespace GameProject
 
                         }
 
-                        foreach (Enemy e in this.EnemyList)
+                        foreach (IEnemy e in this.EnemyList)
                         {
-                            e.Draw(SpriteBatch);
+                            e.Draw(this.SpriteBatch);
                         }
                         foreach (BonusObject bonus in this.BonusesList)
                         {

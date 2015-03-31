@@ -4,8 +4,9 @@
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
     using Microsoft.Xna.Framework.Input;
+    using GameProject.Interfaces;
 
-    public class NormalEnemy : Enemy
+    public class NormalEnemy : Ship, IEnemy, IShooting, IMovableObject, ICollidable, IRenderable 
     {
         private const int NormalEnemySpeed = 5;
         private const int InitialNormalEnemyHealth = 5;
@@ -21,12 +22,21 @@
             this.NormalEnemyBulletTexture = normalEnemyBulletTexture;
             this.EnemyPoints = NormalEnemyPoints;
             this.EnemyShipDamage = NormalEnemyShipDamage;
+            this.IsVisible = true;
         }
 
         public Texture2D NormalEnemyBulletTexture { get; private set; }
+        public bool IsVisible { get; set; }
+        public int EnemyPoints { get; private set; }
+        public int EnemyShipDamage { get; private set; }
+
+        public void DestroyObject()
+        {
+            this.IsVisible = false;
+        }
 
         // Update
-        public override void Update(GameTime gameTime)
+        public void Update(GameTime gameTime)
         {
             // Update Collision Rectangle
             this.BoundingBox = new Rectangle((int)position.X, (int)position.Y, this.Texture.Width, this.Texture.Height);

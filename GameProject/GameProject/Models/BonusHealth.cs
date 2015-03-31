@@ -18,7 +18,7 @@
 
         public override void DistributeBonusEffect(Player p)
         {
-            if (p.Health < 300)
+            if (p.Health < Player.InitialPlayerHealth)
             {
                 p.Health += HealthBoost;
             }

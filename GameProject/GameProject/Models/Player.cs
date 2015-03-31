@@ -8,10 +8,10 @@
 
     public class Player : Ship, IShooting, IMovableObject, ICollidable, IControllable, IRenderable
     {
+        public const int InitialPlayerHealth = 300;
         public const int InitialAttackPower = 1;
         private const float ShipHeight = 50; // Height of the ship texture in pixels. Will change if ship pic is changed.
         private const int PlayerSpeed = 10;
-        private const int InitialPlayerHealth = 200;
         private const int PlayerBulletDelay = 5;
         private const int PlayerBulletSpeed = 10;
         private const float InitialPlayerCoordX = Game1.ScreenWidth/2;

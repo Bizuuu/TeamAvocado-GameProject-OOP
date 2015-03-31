@@ -8,7 +8,7 @@
 
     public interface IShooting
     {
-        int Health { get; }
+        int Health { get; set; }
         int BulletDelay { get; }
         IList<IProjectile> BulletList { get; }
 

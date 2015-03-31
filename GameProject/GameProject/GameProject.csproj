@@ -72,6 +72,7 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IEnemy.cs" />
     <Compile Include="Interfaces\IProjectile.cs" />
     <Compile Include="Interfaces\ICollidable.cs" />
     <Compile Include="Interfaces\IControllable.cs" />
@@ -87,12 +88,10 @@
     <Compile Include="Models\MovingObject.cs" />
     <Compile Include="Models\NormalEnemyBullet.cs" />
     <Compile Include="Models\PlayerBullet.cs" />
-    <Compile Include="Models\Enemy.cs" />
     <Compile Include="Models\Explosion.cs" />
     <Compile Include="Models\HUD.cs" />
     <Compile Include="Models\NormalEnemy.cs" />
     <Compile Include="Models\Player.cs" />
-    <Compile Include="Models\Projectile.cs" />
     <Compile Include="Models\Ship.cs" />
     <Compile Include="Models\SoundCaller.cs" />
     <Compile Include="Models\SoundManager.cs" />

@@ -9,9 +9,9 @@ Content\explosion3.xnb
 Content\menuScreen.xnb
 Content\gameOverScreen.xnb
 Content\damageBonus.xnb
+Content\heartBonus.xnb
 Content\georgia.xnb
 Content\Theme.xnb
 Content\Theme.wma
 Content\Laser.xnb
 Content\Blast.xnb
-Content\heartBonus.xnb

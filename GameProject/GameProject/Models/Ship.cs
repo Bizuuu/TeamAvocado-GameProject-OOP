@@ -1,10 +1,7 @@
-﻿
-namespace GameProject.Models
+﻿namespace GameProject.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
@@ -18,6 +15,7 @@ namespace GameProject.Models
         private IList<IProjectile> bulletList;
         //Collision variable
         private Rectangle boundingBox;
+        private int health;
 
         //Constructor
         public Ship(Texture2D texture, Vector2 position, int speed, int health, int bulletDelay )
@@ -28,7 +26,11 @@ namespace GameProject.Models
             this.bulletList = new List<IProjectile>();
         }
 
-        public int Health { get; set; }
+        public int Health
+        {
+            get { return this.health; }
+            set { this.health = value; }
+        }
 
         public int BulletDelay
         {

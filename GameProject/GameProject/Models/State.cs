@@ -1,5 +1,4 @@
-﻿
-namespace GameProject.Models
+﻿namespace GameProject.Models
 {
     //State Enum
     public enum State

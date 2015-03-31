@@ -1,4 +1,3 @@
-
 namespace GameProject
 {
     using System;
@@ -385,7 +384,7 @@ namespace GameProject
                         this.bonusesList.Add(new BonusDamage(Content.Load<Texture2D>("damageBonus"), new Vector2(randX, randY)));
                         break;
                     case 1:
-                        this.bonusesList.Add(new BonusHealth(Content.Load<Texture2D>("healthBonus"), new Vector2(randX, randY)));
+                        this.bonusesList.Add(new BonusHealth(Content.Load<Texture2D>("heartBonus"), new Vector2(randX, randY)));
                         break;
 
                     // Extend with more, if there is more than 2 types of bonus;

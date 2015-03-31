@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb</Output>
-      <Time>2015-03-29T00:33:59.8186403+02:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb</Output>
+      <Time>2015-03-31T18:48:06.07985+03:00</Time>
     </Item>
     <Item>
       <Source>space.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb</Output>
-      <Time>2015-03-29T00:33:59.8677239+02:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb</Output>
+      <Time>2015-03-31T18:48:06.07985+03:00</Time>
     </Item>
     <Item>
       <Source>asteroid.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb</Output>
-      <Time>2015-03-29T00:33:59.7666369+02:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb</Output>
+      <Time>2015-03-31T18:48:06.0738497+03:00</Time>
     </Item>
     <Item>
       <Source>playerbullet.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb</Output>
-      <Time>2015-03-29T00:33:59.8126414+02:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb</Output>
+      <Time>2015-03-31T18:48:06.07885+03:00</Time>
     </Item>
     <Item>
       <Source>healthbar.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb</Output>
-      <Time>2015-03-29T00:43:20.3321687+02:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb</Output>
+      <Time>2015-03-31T18:48:06.0768499+03:00</Time>
     </Item>
     <Item>
       <Source>enemyship.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\enemyship.xnb</Output>
-      <Time>2015-03-29T14:29:59.3670636+03:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\enemyship.xnb</Output>
+      <Time>2015-03-31T18:48:06.0748498+03:00</Time>
     </Item>
     <Item>
       <Source>EnemyBullet.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb</Output>
-      <Time>2015-03-29T14:29:59.2380486+03:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb</Output>
+      <Time>2015-03-31T18:48:06.0478482+03:00</Time>
     </Item>
     <Item>
       <Source>explosion3.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\explosion3.xnb</Output>
-      <Time>2015-03-29T14:29:59.3780617+03:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\explosion3.xnb</Output>
+      <Time>2015-03-31T18:48:06.0758498+03:00</Time>
     </Item>
     <Item>
       <Source>menuScreen.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\menuScreen.xnb</Output>
-      <Time>2015-03-29T15:26:49.6002912+03:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\menuScreen.xnb</Output>
+      <Time>2015-03-31T18:48:06.0768499+03:00</Time>
     </Item>
     <Item>
       <Source>gameOverScreen.png</Source>
@@ -88,45 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\gameOverScreen.xnb</Output>
-      <Time>2015-03-29T17:46:42.7678017+03:00</Time>
-    </Item>
-    <Item>
-      <Source>georgia.spritefont</Source>
-      <Name>georgia</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\georgia.xnb</Output>
-      <Time>2015-03-29T14:29:59.4010907+03:00</Time>
-    </Item>
-    <Item>
-      <Source>Theme.mp3</Source>
-      <Name>Theme</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.xnb</Output>
-      <Extra>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.wma</Extra>
-      <Time>2015-03-29T14:41:02.3927694+03:00</Time>
-    </Item>
-    <Item>
-      <Source>Laser.wav</Source>
-      <Name>Laser</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Laser.xnb</Output>
-      <Time>2015-03-29T14:41:14.6728167+03:00</Time>
-    </Item>
-    <Item>
-      <Source>Blast.wav</Source>
-      <Name>Blast</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Blast.xnb</Output>
-      <Time>2015-03-29T14:41:24.2211006+03:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\gameOverScreen.xnb</Output>
+      <Time>2015-03-31T18:48:06.0758498+03:00</Time>
     </Item>
     <Item>
       <Source>damageBonus.png</Source>
@@ -134,17 +97,54 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\damageBonus.xnb</Output>
-      <Time>2015-03-30T23:16:59.2540921+03:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\damageBonus.xnb</Output>
+      <Time>2015-03-31T19:19:08.667384+03:00</Time>
     </Item>
     <Item>
-      <Source>healthBonus.png</Source>
-      <Name>healthBonus</Name>
+      <Source>georgia.spritefont</Source>
+      <Name>georgia</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\georgia.xnb</Output>
+      <Time>2015-03-31T18:48:06.0758498+03:00</Time>
+    </Item>
+    <Item>
+      <Source>Theme.mp3</Source>
+      <Name>Theme</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.xnb</Output>
+      <Extra>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.wma</Extra>
+      <Time>2015-03-31T18:48:06.0728496+03:00</Time>
+    </Item>
+    <Item>
+      <Source>Laser.wav</Source>
+      <Name>Laser</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Laser.xnb</Output>
+      <Time>2015-03-31T18:48:06.0498483+03:00</Time>
+    </Item>
+    <Item>
+      <Source>Blast.wav</Source>
+      <Name>Blast</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Blast.xnb</Output>
+      <Time>2015-03-31T18:48:06.0468481+03:00</Time>
+    </Item>
+    <Item>
+      <Source>heartBonus.png</Source>
+      <Name>heartBonus</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthBonus.xnb</Output>
-      <Time>2015-03-31T14:23:05.479542+03:00</Time>
+      <Output>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\heartBonus.xnb</Output>
+      <Time>2015-03-31T19:24:08.1705145+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -153,10 +153,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -184,8 +184,8 @@
         <Value>2011-09-01T17:22:30+03:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-03-23T17:22:03.8582065+02:00</Value>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-03-28T15:39:28.2031117+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

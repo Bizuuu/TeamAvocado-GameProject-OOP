@@ -135,8 +135,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="healthBonus.png">
-      <Name>healthBonus</Name>
+    <Compile Include="heartBonus.png">
+      <Name>heartBonus</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

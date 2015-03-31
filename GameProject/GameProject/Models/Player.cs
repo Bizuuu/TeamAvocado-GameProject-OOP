@@ -1,16 +1,10 @@
-﻿
-namespace GameProject.Models
+﻿namespace GameProject.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
     using Microsoft.Xna.Framework.Input;
     using GameProject.Interfaces;
-    using GameProject;
 
     public class Player : Ship, IShooting, IMovableObject, ICollidable, IControllable, IRenderable
     {

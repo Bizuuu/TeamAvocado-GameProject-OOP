@@ -8,10 +8,11 @@ Content\EnemyBullet.xnb
 Content\explosion3.xnb
 Content\menuScreen.xnb
 Content\gameOverScreen.xnb
+Content\damageBonus.xnb
+Content\healthBonus.xnb
 Content\georgia.xnb
 Content\Theme.xnb
 Content\Laser.xnb
 Content\Blast.xnb
-Content\damageBonus.xnb
-Content\healthBonus.xnb
+Content\heartBonus.xnb
 Content\Theme.wma

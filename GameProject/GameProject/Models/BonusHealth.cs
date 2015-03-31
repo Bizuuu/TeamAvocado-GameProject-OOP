@@ -1,10 +1,5 @@
-﻿
-namespace GameProject.Models
+﻿namespace GameProject.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
@@ -14,7 +9,7 @@ namespace GameProject.Models
     public class BonusHealth : BonusObject, IMovableObject, ICollidable, IDestructable
     {
         private const int HealthBoost = 50;
-        private const int HealthBonusSpeed = 2;
+        private const int HealthBonusSpeed = 3;
 
         public BonusHealth(Texture2D texture, Vector2 position)
             : base(texture, position, HealthBonusSpeed)
@@ -23,7 +18,10 @@ namespace GameProject.Models
 
         public override void DistributeBonusEffect(Player p)
         {
-            p.Health += HealthBoost;
+            if (p.Health < 300)
+            {
+                p.Health += HealthBoost;
+            }
         }
     }
 }

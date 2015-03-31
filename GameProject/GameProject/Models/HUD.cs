@@ -1,10 +1,5 @@
-﻿
-namespace GameProject.Models
+﻿namespace GameProject.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
@@ -27,7 +22,6 @@ namespace GameProject.Models
             this.ShowHud = true;
             this.PlayerScoreFont = null;
             this.playerScorePos = new Vector2(CoordX, CoordY);
-
         }
         
         public int PlayerScore { get; set; }

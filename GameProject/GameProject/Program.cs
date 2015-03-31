@@ -1,7 +1,7 @@
-using System;
-
 namespace GameProject
 {
+    using System;
+
 #if WINDOWS || XBOX
     static class Program
     {

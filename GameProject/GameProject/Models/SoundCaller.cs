@@ -1,7 +1,5 @@
-﻿
-namespace GameProject.Models
+﻿namespace GameProject.Models
 {
-    using System;
     using Microsoft.Xna.Framework.Audio;  
 
     public class SoundCaller

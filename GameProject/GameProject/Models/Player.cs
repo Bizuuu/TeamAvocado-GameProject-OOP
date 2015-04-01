@@ -12,7 +12,7 @@
 
         public const int InitialPlayerHealth = 300;
         public const int InitialAttackPower = 1;
-        private const float ShipHeight = 50;// Height of the ship texture in pixels. Will change if ship pic is changed.
+        private const float ShipHeight = 50; // Height of the ship texture in pixels. Will change if ship pic is changed.
         private const int PlayerSpeed = 10;
         private const int PlayerBulletDelay = 5;
         private const int PlayerBulletSpeed = 10;
@@ -145,32 +145,38 @@
             {
                 this.position.Y = this.Position.Y - this.Speed;
             }
+
             if (keyState.IsKeyDown(Keys.A))
             {
                 this.position.X = this.Position.X - this.Speed;
             }
+
             if (keyState.IsKeyDown(Keys.S))
             {
                 this.position.Y = this.Position.Y + this.Speed;
             }
+
             if (keyState.IsKeyDown(Keys.D))
             {
                 this.position.X = this.Position.X + this.Speed;
             }
 
-            //Keep player ship in screen bounds
+            // Keep player ship in screen bounds
             if (this.Position.X <= 0)
             {
                 this.position.X = 0;
-            }
+            } 
+
             if (this.Position.X >= Game1.ScreenWidth - this.Texture.Width)
             {
                 this.position.X = Game1.ScreenWidth - this.Texture.Width;
             }
+
             if (this.Position.Y <= 0)
             {
                 this.position.Y = 0;
             }
+
             if (this.Position.Y >= Game1.ScreenHeight - this.Texture.Height)
             {
                 this.position.Y = Game1.ScreenHeight - this.Texture.Height;

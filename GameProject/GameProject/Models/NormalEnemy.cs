@@ -10,8 +10,8 @@
         private const int InitialNormalEnemyHealth = 5;
         private const int NormalEnemyBulletDelay = 40;
         private const int NormalEnemyBulletSpeed = 10;
-        private const int NormalEnemyPoints = 20;// Points awarded when destroyed;
-        private const int NormalEnemyShipDamage = 40;// Health lost by player if he collides with enemy ship;
+        private const int NormalEnemyPoints = 20; // Points awarded when destroyed;
+        private const int NormalEnemyShipDamage = 40; // Health lost by player if he collides with enemy ship;
 
         // The same way we can make different enemies - with different textures, bullets, damage, etc.
         public NormalEnemy(Texture2D texture, Vector2 position, Texture2D normalEnemyBulletTexture) : base(texture, position, NormalEnemySpeed, InitialNormalEnemyHealth, NormalEnemyBulletDelay)

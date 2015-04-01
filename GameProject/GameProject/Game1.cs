@@ -13,15 +13,15 @@ namespace GameProject
     //Main
     public class Game1 : Microsoft.Xna.Framework.Game
     {
-        public const int ScreenHeight = 700;// Can be changed
-        public const int ScreenWidth = 800;// Can be changed
+        public const int ScreenHeight = 700; // Can be changed
+        public const int ScreenWidth = 800; // Can be changed
         public const int NumberOfEnemiesOnScreen = 3;
-        public const int TypesOfEnemies = 1;// could be more(for now - only NormalEnemy);
+        public const int TypesOfEnemies = 1; // could be more(for now - only NormalEnemy);
         public const int MaxAsteroidsOnScreen = 5;
-        public const int TypesOfBonuses = 2;// could be more;
+        public const int TypesOfBonuses = 2; // could be more;
         public const int MinBonusesInPlay = 2;        
 
-        //For Veselin to incorporate Singleton with this. If not - make it an automatic prop;
+        // For Veselin to incorporate Singleton with this. If not - make it an automatic prop;
         private readonly Starfield sf = new Starfield();       
 
         // Fields
@@ -257,7 +257,9 @@ namespace GameProject
                     {
                         this.sf.Speed = Starfield.StarfieldSpeed;
                         // Updating Enemies and checking collision of enemy ship to player ship
-                        foreach (IEnemy e in this.EnemyList) // Polymorphism - accessing the child class of Enemy prop's and methods; 
+
+                        // Polymorphism - accessing the child class of Enemy prop's and methods;
+                        foreach (IEnemy e in this.EnemyList)  
                         {
                             // Check if enemyship is colliding with player
                             if (e.BoundingBox.Intersects(this.Player.BoundingBox))
@@ -274,7 +276,9 @@ namespace GameProject
                                 if (this.Player.BoundingBox.Intersects(e.BulletList[i].BoundingBox)) // Bullets in bulletlists are accessed through their parrent class Projectile - Polymorphism;
                                 {
                                     this.Player.Health -= e.BulletList[i].Damage/* /p.DefensePower*/;
-                                    this.Player.ResetBonusEffects();// When player is hit - attack, defense bonus are set to their initial value;
+
+                                    // When player is hit - attack, defense bonus are set to their initial value;
+                                    this.Player.ResetBonusEffects();
                                     e.BulletList[i].DestroyObject();
                                 }
                             }
@@ -298,22 +302,24 @@ namespace GameProject
 
                             e.Update(gameTime);
                         }
+
                         foreach (Explosion ex in this.ExplosionList)
                         {
                             ex.Update(gameTime);
                         }
 
-                        //for each asteroid in our asteroidList, update it and check for collisions
+                        // for each asteroid in our asteroidList, update it and check for collisions
                         foreach (Asteroid a in this.AsteroidList)
                         {
-                            //check if any asteroids are colliding with player
+                            // check if any asteroids are colliding with player
                             // if they are set visible to false
                             if (a.BoundingBox.Intersects(this.Player.BoundingBox))
                             {
                                 this.Player.Health -= a.Damage/* /p.DefensePower*/;
-                                this.Player.ResetBonusEffects();// When player is hit - attack, defense bonus are set to their initial value;
+                                this.Player.ResetBonusEffects(); // When player is hit - attack, defense bonus are set to their initial value;
                                 a.DestroyObject();
                             }
+
                             //Iterate through our bulletList if any asteroids come in contacts with trhese bulets, destroy bulets and asteroids
                             for (int i = 0; i < this.Player.BulletList.Count; i++)
                             {
@@ -326,6 +332,7 @@ namespace GameProject
                                     this.Player.BulletList[i].DestroyObject();
                                 }
                             }
+
                             a.Update(gameTime);
                         }
 
@@ -384,6 +391,7 @@ namespace GameProject
                         break;
                     }
             }
+
             base.Update(gameTime);
         }
 

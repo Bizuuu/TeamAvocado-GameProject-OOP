@@ -8,7 +8,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb</Output>
-      <Time>2015-04-01T22:12:29.3039343+03:00</Time>
+      <Time>2015-04-01T22:56:13.0080526+03:00</Time>
     </Item>
     <Item>
       <Source>space.png</Source>
@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb</Output>
-      <Time>2015-04-01T22:12:29.3049349+03:00</Time>
+      <Time>2015-04-01T22:56:13.0090542+03:00</Time>
     </Item>
     <Item>
       <Source>asteroid.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb</Output>
-      <Time>2015-04-01T22:12:29.2978841+03:00</Time>
+      <Time>2015-04-01T22:56:13.0009224+03:00</Time>
     </Item>
     <Item>
       <Source>playerbullet.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb</Output>
-      <Time>2015-04-01T22:12:29.3039343+03:00</Time>
+      <Time>2015-04-01T22:56:13.0080526+03:00</Time>
     </Item>
     <Item>
       <Source>healthbar.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb</Output>
-      <Time>2015-04-01T22:12:29.3008875+03:00</Time>
+      <Time>2015-04-01T22:56:13.0038913+03:00</Time>
     </Item>
     <Item>
       <Source>enemyship.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\enemyship.xnb</Output>
-      <Time>2015-04-01T22:12:29.2988862+03:00</Time>
+      <Time>2015-04-01T22:56:13.0018876+03:00</Time>
     </Item>
     <Item>
       <Source>EnemyBullet.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb</Output>
-      <Time>2015-04-01T22:12:29.2660261+03:00</Time>
+      <Time>2015-04-01T22:56:12.9673286+03:00</Time>
     </Item>
     <Item>
       <Source>explosion3.png</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\explosion3.xnb</Output>
-      <Time>2015-04-01T22:12:29.2998868+03:00</Time>
+      <Time>2015-04-01T22:56:13.0028902+03:00</Time>
     </Item>
     <Item>
       <Source>menuScreen.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\menuScreen.xnb</Output>
-      <Time>2015-04-01T22:12:29.3008875+03:00</Time>
+      <Time>2015-04-01T22:56:13.0038913+03:00</Time>
     </Item>
     <Item>
       <Source>gameOverScreen.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\gameOverScreen.xnb</Output>
-      <Time>2015-04-01T22:12:29.2998868+03:00</Time>
+      <Time>2015-04-01T22:56:13.0028902+03:00</Time>
     </Item>
     <Item>
       <Source>damageBonus.png</Source>
@@ -98,7 +98,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\damageBonus.xnb</Output>
-      <Time>2015-04-01T22:12:29.2978841+03:00</Time>
+      <Time>2015-04-01T22:56:13.0009224+03:00</Time>
     </Item>
     <Item>
       <Source>heartBonus.png</Source>
@@ -107,7 +107,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\heartBonus.xnb</Output>
-      <Time>2015-04-01T22:12:29.3008875+03:00</Time>
+      <Time>2015-04-01T22:56:13.0038913+03:00</Time>
     </Item>
     <Item>
       <Source>georgia.spritefont</Source>
@@ -116,7 +116,7 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\georgia.xnb</Output>
-      <Time>2015-04-01T22:12:29.2998868+03:00</Time>
+      <Time>2015-04-01T22:56:13.0028902+03:00</Time>
     </Item>
     <Item>
       <Source>Theme.mp3</Source>
@@ -126,7 +126,7 @@
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.xnb</Output>
       <Extra>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.wma</Extra>
-      <Time>2015-04-01T22:12:29.2960488+03:00</Time>
+      <Time>2015-04-01T22:56:12.9993498+03:00</Time>
     </Item>
     <Item>
       <Source>Laser.wav</Source>
@@ -135,7 +135,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Laser.xnb</Output>
-      <Time>2015-04-01T22:12:29.2680298+03:00</Time>
+      <Time>2015-04-01T22:56:12.9693299+03:00</Time>
     </Item>
     <Item>
       <Source>Blast.wav</Source>
@@ -144,7 +144,7 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Blast.xnb</Output>
-      <Time>2015-04-01T22:12:29.264733+03:00</Time>
+      <Time>2015-04-01T22:56:12.9673286+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

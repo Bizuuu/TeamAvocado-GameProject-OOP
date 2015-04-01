@@ -33,12 +33,14 @@
             {
                 return this.speed;
             }
+
             set
             {
                 if (value <= 0)
                 {
                     throw new ArgumentException("Speed can not be assigned 0 or negative.");
                 }
+
                 this.speed = value;
             }
         }

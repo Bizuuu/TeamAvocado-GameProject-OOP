@@ -29,6 +29,7 @@
             {
                 return this.bulletDelay;
             }
+
             protected set
             {
                 if (value < 0)
@@ -76,6 +77,7 @@
             {
                 throw new ArgumentNullException("Can not add projectile that is null.");
             }
+
             this.bulletList.Add(projectile);
         }
 

@@ -9,9 +9,9 @@
     {
         private const float FirstCoordY = 0;
         private const float SecondCoordY = -Game1.ScreenHeight;
-        public const int StarfieldSpeed = 5;
-
         private Vector2 secondPosition;
+
+        public const int StarfieldSpeed = 5;
 
         // Constructor
         public Starfield(Texture2D texture, Vector2 position, int speed)
@@ -23,7 +23,6 @@
         public Starfield()
             : this(null, new Vector2(0, FirstCoordY), StarfieldSpeed)
         {
-
         }
 
         public Vector2 SecondPosition { get { return this.secondPosition; } }

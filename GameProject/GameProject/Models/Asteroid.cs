@@ -1,23 +1,20 @@
 ﻿namespace GameProject.Models
 {
     using System;
-    using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Content;
-    using Microsoft.Xna.Framework.Graphics;
-    using Microsoft.Xna.Framework.Input;
     using GameProject.Interfaces;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
 
     public class Asteroid : MovingObject, IMovableObject, ICollidable, IDestructable, IProjectile, IRenderable
     {
-        private const int AsteroidSpeed = 4;
-        private const int AsteroidDamage = 20;
         public const int AsteroidPoints = 5;
 
+        private const int AsteroidSpeed = 4;
+        private const int AsteroidDamage = 20;
         private int damage;
 
         // Constructor
-        public Asteroid(Texture2D newTexture, Vector2 newPosition) 
-            : base(newTexture, newPosition, AsteroidSpeed)
+        public Asteroid(Texture2D newTexture, Vector2 newPosition) : base(newTexture, newPosition, AsteroidSpeed)
         {
             this.Damage = AsteroidDamage;
             this.IsVisible = true;
@@ -27,13 +24,18 @@
 
         public int Damage
         {
-            get { return this.damage; }
+            get
+            {
+                return this.damage;
+            }
+
             set
             {
                 if (value < 0)
                 {
                     throw new ArgumentException("Damage can not be set to negative.");
                 }
+
                 this.damage = value;
             }
         }
@@ -66,6 +68,6 @@
             {
                 spriteBatch.Draw(this.Texture, this.Position, Color.White);
             }
-        }        
+        }
     }
 }

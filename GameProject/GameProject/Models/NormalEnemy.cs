@@ -1,10 +1,8 @@
 ﻿namespace GameProject.Models
 {
-    using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Content;
-    using Microsoft.Xna.Framework.Graphics;
-    using Microsoft.Xna.Framework.Input;
     using GameProject.Interfaces;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
 
     public class NormalEnemy : Ship, IEnemy, IShooting, IMovableObject, ICollidable, IRenderable 
     {
@@ -12,12 +10,11 @@
         private const int InitialNormalEnemyHealth = 5;
         private const int NormalEnemyBulletDelay = 40;
         private const int NormalEnemyBulletSpeed = 10;
-        private const int NormalEnemyPoints = 20; // Points awarded when destroyed;
+        private const int NormalEnemyPoints = 20;// Points awarded when destroyed;
         private const int NormalEnemyShipDamage = 40;// Health lost by player if he collides with enemy ship;
 
         // The same way we can make different enemies - with different textures, bullets, damage, etc.
-        public NormalEnemy(Texture2D texture, Vector2 position, Texture2D normalEnemyBulletTexture)
-            : base(texture, position, NormalEnemySpeed, InitialNormalEnemyHealth, NormalEnemyBulletDelay)
+        public NormalEnemy(Texture2D texture, Vector2 position, Texture2D normalEnemyBulletTexture) : base(texture, position, NormalEnemySpeed, InitialNormalEnemyHealth, NormalEnemyBulletDelay)
         {
             this.NormalEnemyBulletTexture = normalEnemyBulletTexture;
             this.EnemyPoints = NormalEnemyPoints;
@@ -26,8 +23,11 @@
         }
 
         public Texture2D NormalEnemyBulletTexture { get; private set; }
+
         public bool IsVisible { get; set; }
+
         public int EnemyPoints { get; private set; }
+
         public int EnemyShipDamage { get; private set; }
 
         public void DestroyObject()
@@ -39,7 +39,7 @@
         public void Update(GameTime gameTime)
         {
             // Update Collision Rectangle
-            this.BoundingBox = new Rectangle((int)position.X, (int)position.Y, this.Texture.Width, this.Texture.Height);
+            this.BoundingBox = new Rectangle((int)this.position.X, (int)this.position.Y, this.Texture.Width, this.Texture.Height);
 
             // Update Enemy Movement
             this.position.Y += this.Speed;
@@ -65,9 +65,9 @@
             if (this.BulletDelay <= 0)
             {
                 // Create new bullet and position it front and center of enemy ship
-                Vector2 newBulletPosition = new Vector2(this.Position.X + this.Texture.Width / 2 - NormalEnemyBulletTexture.Width / 2,
-                                                this.position.Y + this.Texture.Height / 2); // maybe different values;                
-                NormalEnemyBullet newBullet = new NormalEnemyBullet(NormalEnemyBulletTexture,
+                Vector2 newBulletPosition = new Vector2(this.Position.X + this.Texture.Width / 2 - this.NormalEnemyBulletTexture.Width / 2,
+                    this.position.Y + this.Texture.Height / 2); // maybe different values;                
+                NormalEnemyBullet newBullet = new NormalEnemyBullet(this.NormalEnemyBulletTexture,
                     newBulletPosition, NormalEnemyBulletSpeed);
 
                 if (this.BulletList.Count < 20)

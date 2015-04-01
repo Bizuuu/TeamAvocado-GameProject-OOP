@@ -1,36 +1,39 @@
 ﻿namespace GameProject.Models
 {
+    using GameProject.Interfaces;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Content;
     using Microsoft.Xna.Framework.Graphics;
     using Microsoft.Xna.Framework.Input;
-    using GameProject.Interfaces;
 
     public class Player : Ship, IShooting, IMovableObject, ICollidable, IControllable, IRenderable
     {
+        public static readonly Vector2 HealthBarPosition = new Vector2(50, 50);
+
         public const int InitialPlayerHealth = 300;
         public const int InitialAttackPower = 1;
-        private const float ShipHeight = 50; // Height of the ship texture in pixels. Will change if ship pic is changed.
+        private const float ShipHeight = 50;// Height of the ship texture in pixels. Will change if ship pic is changed.
         private const int PlayerSpeed = 10;
         private const int PlayerBulletDelay = 5;
         private const int PlayerBulletSpeed = 10;
-        private const float InitialPlayerCoordX = Game1.ScreenWidth/2;
+        private const float InitialPlayerCoordX = Game1.ScreenWidth / 2;
         private const float InitialPlayerCoordY = Game1.ScreenHeight - ShipHeight;        
 
-        public static readonly Vector2 HealthBarPosition = new Vector2(50, 50);
-
         //Constructor
-        public Player()
-          : base(null, new Vector2(InitialPlayerCoordX, InitialPlayerCoordY), PlayerSpeed, InitialPlayerHealth, PlayerBulletDelay)
+        public Player() : base(null, new Vector2(InitialPlayerCoordX, InitialPlayerCoordY), PlayerSpeed, InitialPlayerHealth, PlayerBulletDelay)
         {
             this.AttackPower = InitialAttackPower;
             // set defense prop, eventually;
         }
 
         public Texture2D HealthTexture { get; private set; }
+
         public Texture2D PlayerBulletTexture { get; private set; }
+
         public Rectangle HealthRectangle { get; private set; }
+
         public int AttackPower { get; set; }
+
         // Could have Defense, for manipulating taken damage, if per say someone writes a BonusArmor;
 
         //Load Content
@@ -62,11 +65,11 @@
 
             // Bounding box for player spaceship
             this.BoundingBox = new Rectangle((int)this.position.X, (int)this.position.Y,
-              this.Texture.Width, this.Texture.Height);
+                this.Texture.Width, this.Texture.Height);
 
             // Set rectangle for the health bar
             this.HealthRectangle = new Rectangle((int)HealthBarPosition.X, (int)HealthBarPosition.Y,
-                                                  this.Health, this.HealthTexture.Width);
+                this.Health, this.HealthTexture.Width);
 
             //Fire Bullets
             if (keyState.IsKeyDown(Keys.Space))
@@ -99,9 +102,9 @@
                 // if yes - can create Missiles, which will be a new class, with a different texture
                 // and different damage, inheriting the Projectile class;
 
-                Vector2 newBulletPosition = new Vector2(this.Position.X + this.Texture.Width / 2 - PlayerBulletTexture.Width / 2,
-                                                 this.position.Y + this.Texture.Height / 2); // maybe different values;
-                PlayerBullet newBullet = new PlayerBullet(PlayerBulletTexture, newBulletPosition, PlayerBulletSpeed);
+                Vector2 newBulletPosition = new Vector2(this.Position.X + this.Texture.Width / 2 - this.PlayerBulletTexture.Width / 2,
+                    this.position.Y + this.Texture.Height / 2); // maybe different values;
+                PlayerBullet newBullet = new PlayerBullet(this.PlayerBulletTexture, newBulletPosition, PlayerBulletSpeed);
                  
                 if (this.BulletList.Count < 20)
                 {
@@ -133,7 +136,6 @@
                     this.RemoveBulletAtPosition(i);
                     i--;
                 }
-
             }
         }
 

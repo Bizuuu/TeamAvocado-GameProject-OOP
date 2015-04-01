@@ -1,18 +1,14 @@
 ﻿namespace GameProject.Models
 {
-    using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Content;
-    using Microsoft.Xna.Framework.Graphics;
-    using Microsoft.Xna.Framework.Input;
     using GameProject.Interfaces;
-    using GameProject;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
 
     public class PlayerBullet : Ammunition, IProjectile, IMovableObject, ICollidable, IDestructable
     {
         private const int PlayerBulletDamage = 10;
 
-        public PlayerBullet(Texture2D texture, Vector2 position, int speed)
-            : base(texture, position, speed, PlayerBulletDamage)
+        public PlayerBullet(Texture2D texture, Vector2 position, int speed) : base(texture, position, speed, PlayerBulletDamage)
         {
         }
 
@@ -28,7 +24,6 @@
             //if bullet hits the top of the screen, then make visible false
             if (this.Position.Y <= 0)
             {
-
                 this.IsVisible = false;
             }
         }

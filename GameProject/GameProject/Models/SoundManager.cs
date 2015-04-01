@@ -1,11 +1,7 @@
 ﻿namespace GameProject
 {
-    using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Audio;
     using Microsoft.Xna.Framework.Content;
-    using Microsoft.Xna.Framework.GamerServices;
-    using Microsoft.Xna.Framework.Graphics;
-    using Microsoft.Xna.Framework.Input;
     using Microsoft.Xna.Framework.Media;
 
     public sealed class SoundManager
@@ -28,7 +24,9 @@
         }
 
         public SoundEffect PlayerShootSound { get; set; }
+
         public SoundEffect ExplodeSound { get; set; }
+
         public Song BgMusic { get; set; }
 
         public void LoadContent(ContentManager Content)

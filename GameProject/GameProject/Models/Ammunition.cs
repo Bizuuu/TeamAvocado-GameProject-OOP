@@ -1,18 +1,15 @@
 ﻿namespace GameProject.Models
 {
     using System;
-    using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Content;
-    using Microsoft.Xna.Framework.Graphics;
-    using Microsoft.Xna.Framework.Input;
     using GameProject.Interfaces;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
 
     public abstract class Ammunition : MovingObject, IProjectile, IMovableObject, ICollidable, IDestructable, IRenderable
     {
         private int damage;
 
-        public Ammunition(Texture2D texture, Vector2 position, int speed, int damage)
-            : base(texture, position, speed)
+        public Ammunition(Texture2D texture, Vector2 position, int speed, int damage) : base(texture, position, speed)
         {
             this.Damage = damage;
             this.IsVisible = true;
@@ -20,13 +17,18 @@
 
         public int Damage
         {
-            get { return this.damage; }
+            get 
+            { 
+                return this.damage; 
+            }
+
             set
             {
                 if (value < 0)
                 {
                     throw new ArgumentException("Damage can not be set to negative.");
                 }
+
                 this.damage = value;
             }
         }
@@ -41,8 +43,6 @@
         {
             this.IsVisible = false;
         }
-
-        
 
         public override void Draw(SpriteBatch spriteBatch)
         {

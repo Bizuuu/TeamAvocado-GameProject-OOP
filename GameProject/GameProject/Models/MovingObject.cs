@@ -1,16 +1,13 @@
 ﻿namespace GameProject.Models
 {
     using System;
-    using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Content;
-    using Microsoft.Xna.Framework.Graphics;
-    using Microsoft.Xna.Framework.Input;
     using GameProject.Interfaces;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
 
     public abstract class MovingObject : IMovableObject, IRenderable
     {
         protected Vector2 position;
-        private Texture2D texture;
         private int speed;
 
         public MovingObject(Texture2D texture, Vector2 position, int speed)
@@ -20,20 +17,22 @@
             this.Speed = speed;
         }
 
-        public Texture2D Texture
-        {
-            get { return this.texture; }
-            protected set { this.texture = value; }
-        }
+        public Texture2D Texture { get; protected set; }
 
         public Vector2 Position
         {
-            get { return this.position; }
+            get
+            {
+                return this.position;
+            }
         }
 
         public int Speed
         {
-            get { return this.speed; }
+            get
+            {
+                return this.speed;
+            }
             set
             {
                 if (value <= 0)

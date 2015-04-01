@@ -4,15 +4,15 @@
 
     public class SoundCaller
     {
-        SoundPublisher publisher;
-        SoundSubscriber subscriber;
+        private readonly SoundPublisher publisher;
+        private readonly SoundSubscriber subscriber;
 
         public SoundCaller(SoundEffect eff)
         {
-            publisher = new SoundPublisher(eff);
-            subscriber = new SoundSubscriber();
-            subscriber.Subscribe(publisher);
-            publisher.Execute();
+            this.publisher = new SoundPublisher(eff);
+            this.subscriber = new SoundSubscriber();
+            this.subscriber.Subscribe(this.publisher);
+            this.publisher.Execute();
         }
     }
 }

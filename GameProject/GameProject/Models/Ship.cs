@@ -2,39 +2,33 @@
 {
     using System;
     using System.Collections.Generic;
-    using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Content;
-    using Microsoft.Xna.Framework.Graphics;
-    using Microsoft.Xna.Framework.Input;
     using GameProject.Interfaces;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
 
     public abstract class Ship : MovingObject, IShooting, IMovableObject, ICollidable, IRenderable
     {
+        private readonly IList<IProjectile> bulletList;
         // Shooting variables
         private int bulletDelay;
-        private IList<IProjectile> bulletList;
-        //Collision variable
-        private Rectangle boundingBox;
-        private int health;
 
+        //Collision variable
         //Constructor
-        public Ship(Texture2D texture, Vector2 position, int speed, int health, int bulletDelay )
-            : base(texture, position, speed)
-        {            
+        public Ship(Texture2D texture, Vector2 position, int speed, int health, int bulletDelay) : base(texture, position, speed)
+        { 
             this.Health = health;
             this.BulletDelay = bulletDelay;
             this.bulletList = new List<IProjectile>();
         }
 
-        public int Health
-        {
-            get { return this.health; }
-            set { this.health = value; }
-        }
+        public int Health { get; set; }
 
         public int BulletDelay
         {
-            get { return this.bulletDelay; }
+            get
+            {
+                return this.bulletDelay;
+            }
             protected set
             {
                 if (value < 0)
@@ -47,14 +41,13 @@
 
         public IList<IProjectile> BulletList
         {
-            get { return new List<IProjectile>(this.bulletList); }
+            get
+            {
+                return new List<IProjectile>(this.bulletList);
+            }
         }
 
-        public Rectangle BoundingBox
-        {
-            get { return this.boundingBox; }
-            protected set { this.boundingBox = value; }
-        }
+        public Rectangle BoundingBox { get; protected set; }
                 
         public abstract void Shoot();
 
@@ -89,6 +82,6 @@
         protected void RemoveBulletAtPosition(int bulletPosition)
         {
             this.bulletList.RemoveAt(bulletPosition);
-        }        
+        }
     }
 }

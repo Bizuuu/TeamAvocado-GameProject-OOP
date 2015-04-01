@@ -1,15 +1,12 @@
 ﻿namespace GameProject.Models
 {
-    using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Content;
-    using Microsoft.Xna.Framework.Graphics;
-    using Microsoft.Xna.Framework.Input;
     using GameProject.Interfaces;
+    using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Graphics;
 
     public abstract class BonusObject : MovingObject, IMovableObject, ICollidable, IDestructable, IRenderable
     {
-        public BonusObject(Texture2D texture, Vector2 position, int speed)
-            : base(texture, position, speed)
+        public BonusObject(Texture2D texture, Vector2 position, int speed) : base(texture, position, speed)
         {
             this.IsVisible = true;
         }
@@ -35,7 +32,8 @@
             this.position.X = this.position.X + this.Speed;
             if (this.position.X >= Game1.ScreenWidth)
             {
-                this.DestroyObject();// So they don't come so often as asteroids - correction if necessary;
+                // So they don't come so often as asteroids - correction if necessary
+                this.DestroyObject();
             }
         }
 
@@ -46,6 +44,6 @@
             {
                 spriteBatch.Draw(this.Texture, this.Position, Color.White);
             }
-        }     
+        }
     }
 }

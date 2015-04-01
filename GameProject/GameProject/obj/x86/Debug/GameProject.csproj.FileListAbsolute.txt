@@ -44,3 +44,26 @@ C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\ob
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.pdb
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\heartBonus.xnb
 C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\heartBonus.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\enemyship.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\explosion3.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\menuScreen.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\gameOverScreen.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\damageBonus.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\heartBonus.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\georgia.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Laser.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Blast.xnb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.wma
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\GameProject.exe
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\GameProject.pdb
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.csprojResolveAssemblyReference.cache
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.exe
+D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.pdb

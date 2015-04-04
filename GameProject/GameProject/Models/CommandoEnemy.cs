@@ -4,7 +4,7 @@
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    public class CommandoEnemy : Enemy
+    public class CommandoEnemy : Enemy, IEnemy, IShooting, IMovableObject, ICollidable, IRenderable 
     {
         private const int commandoEnemySpeed = 10;
         private const int initialCommandoEnemyHealth = 5;

@@ -4,7 +4,7 @@
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    public class DefaultEnemy : Enemy
+    public class DefaultEnemy : Enemy, IEnemy, IShooting, IMovableObject, ICollidable, IRenderable 
     {
         private const int defaultEnemySpeed = 5;
         private const int initialDefaultEnemyHealth = 5;

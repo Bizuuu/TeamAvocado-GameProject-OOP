@@ -4,7 +4,7 @@
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    public class BossEnemy : Enemy
+    public class BossEnemy : Enemy, IEnemy, IShooting, IMovableObject, ICollidable, IRenderable 
     {
         private const int bossEnemySpeed = 5;
         private const int initialBossEnemyHealth = 20;

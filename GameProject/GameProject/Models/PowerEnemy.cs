@@ -4,7 +4,7 @@
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
 
-    public class PowerEnemy : Enemy
+    public class PowerEnemy : Enemy, IEnemy, IShooting, IMovableObject, ICollidable, IRenderable 
     {
         private const int powerEnemySpeed = 5;
         private const int initialPowerEnemyHealth = 5;

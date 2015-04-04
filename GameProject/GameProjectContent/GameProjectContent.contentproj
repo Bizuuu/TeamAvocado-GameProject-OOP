@@ -114,20 +114,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="menuScreen.png">
-      <Name>menuScreen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="gameOverScreen.png">
-      <Name>gameOverScreen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="damageBonus.png">
       <Name>damageBonus</Name>
       <Importer>TextureImporter</Importer>
@@ -158,6 +144,20 @@
   <ItemGroup>
     <Compile Include="PowerShip.png">
       <Name>PowerShip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainScreen.png">
+      <Name>MainScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameOver2.png">
+      <Name>GameOver2</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

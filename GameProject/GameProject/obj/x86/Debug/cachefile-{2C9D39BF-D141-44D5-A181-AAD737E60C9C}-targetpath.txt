@@ -6,8 +6,6 @@ Content\healthbar.xnb
 Content\enemyship.xnb
 Content\EnemyBullet.xnb
 Content\explosion3.xnb
-Content\menuScreen.xnb
-Content\gameOverScreen.xnb
 Content\damageBonus.xnb
 Content\heartBonus.xnb
 Content\georgia.xnb
@@ -18,3 +16,5 @@ Content\Blast.xnb
 Content\BossShip.xnb
 Content\commandoShip.xnb
 Content\PowerShip.xnb
+Content\MainScreen.xnb
+Content\GameOver2.xnb

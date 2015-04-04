@@ -28,8 +28,6 @@ C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bi
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\enemyship.xnb
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\explosion3.xnb
-C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\menuScreen.xnb
-C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\gameOverScreen.xnb
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\damageBonus.xnb
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\georgia.xnb
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.xnb
@@ -93,3 +91,5 @@ C:\Users\Vesselin\Desktop\C# OOP\TeamAvocado-GameProject-OOP\GameProject\GamePro
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\BossShip.xnb
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\commandoShip.xnb
 C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\PowerShip.xnb
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\MainScreen.xnb
+C:\Users\Vesselin\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\GameOver2.xnb

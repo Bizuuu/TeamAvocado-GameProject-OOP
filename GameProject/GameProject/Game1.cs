@@ -233,8 +233,8 @@ namespace GameProject
             this.Player.LoadContent(this.Content);
             this.sf.LoadContent(this.Content);
             this.SM.LoadContent(this.Content);
-            this.MenuImage = this.Content.Load<Texture2D>("menuScreen");
-            this.GameOverImage = this.Content.Load<Texture2D>("gameOverScreen");
+            this.MenuImage = this.Content.Load<Texture2D>("MainScreen");
+            this.GameOverImage = this.Content.Load<Texture2D>("GameOver2");
         }
 
         //Update
@@ -454,9 +454,10 @@ namespace GameProject
                     // DRAW GAME OVER STATE
                 case State.Gameover:
                     {
+                        this.sf.Draw(this.SpriteBatch);
                         this.SpriteBatch.Draw(this.GameOverImage, new Vector2(0, 0), Color.White);
                         this.SpriteBatch.DrawString(this.Hud.PlayerScoreFont, string.Format("Your score is: {0}", this.Hud.PlayerScore.ToString()),
-                            new Vector2(0, 0), Color.Red);
+                            new Vector2(300, 500), Color.White);
                         break;
                     }
             }

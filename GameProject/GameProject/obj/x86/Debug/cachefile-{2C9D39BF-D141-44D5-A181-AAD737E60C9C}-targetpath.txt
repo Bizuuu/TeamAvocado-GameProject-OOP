@@ -15,3 +15,6 @@ Content\Theme.xnb
 Content\Theme.wma
 Content\Laser.xnb
 Content\Blast.xnb
+Content\BossShip.xnb
+Content\commandoShip.xnb
+Content\PowerShip.xnb

@@ -16,7 +16,7 @@ namespace GameProject
         public const int ScreenHeight = 700; // Can be changed
         public const int ScreenWidth = 800; // Can be changed
         public const int NumberOfEnemiesOnScreen = 3;
-        public const int TypesOfEnemies = 1; // could be more(for now - only NormalEnemy);
+        public const int TypesOfEnemies = 4;
         public const int MaxAsteroidsOnScreen = 5;
         public const int TypesOfBonuses = 2; // could be more;
         public const int MinBonusesInPlay = 2;        
@@ -141,14 +141,26 @@ namespace GameProject
                 switch (randEnemy)
                 {
                     case 0:
-                        this.enemyList.Add(new NormalEnemy(this.Content.Load<Texture2D>("enemyship"),
+                        this.enemyList.Add(new DefaultEnemy(this.Content.Load<Texture2D>("enemyship"),
                             new Vector2(randX, randY),
                             this.Content.Load<Texture2D>("EnemyBullet")));
                         break;
                 // Extend with more, if there is more than 1 type of enemy;
-                //case 1:
-                //    // enemyList.Add(new SomeOtherKindOfEnemy();)
-                //    break;                    
+                    case 1:
+                        this.enemyList.Add(new BossEnemy(this.Content.Load<Texture2D>("BossShip"),
+                            new Vector2(randX, randY),
+                            this.Content.Load<Texture2D>("EnemyBullet")));
+                        break;
+                    case 2:
+                        this.enemyList.Add(new CommandoEnemy(this.Content.Load<Texture2D>("CommandoShip"),
+                            new Vector2(randX, randY),
+                            this.Content.Load<Texture2D>("EnemyBullet")));
+                        break;
+                    case 3:
+                        this.enemyList.Add(new PowerEnemy(this.Content.Load<Texture2D>("PowerShip"),
+                            new Vector2(randX, randY),
+                            this.Content.Load<Texture2D>("EnemyBullet")));
+                        break;
                 }
             }
             //if any of enemies in the list were destroyed (or invisible), then remove from the list

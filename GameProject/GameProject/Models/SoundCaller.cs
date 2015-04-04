@@ -2,7 +2,7 @@
 {
     using Microsoft.Xna.Framework.Audio;  
 
-    public class SoundCaller
+    public struct SoundCaller
     {
         private readonly SoundPublisher publisher;
         private readonly SoundSubscriber subscriber;

@@ -11,6 +11,7 @@
         public const int InititalPlayerScore = 0;
         public const int CoordX = Game1.ScreenWidth / 2;
         public const int CoordY = 50;
+        private int playerScore;
 
         //Constructor
         public HUD()
@@ -21,7 +22,11 @@
             this.PlayerScorePosition = new Vector2(CoordX, CoordY);
         }
         
-        public int PlayerScore { get; set; }
+        public int PlayerScore
+        {
+            get { return this.playerScore; }
+            set { this.playerScore = value; }
+        }
 
         public bool ShowHud { get; set; }
 

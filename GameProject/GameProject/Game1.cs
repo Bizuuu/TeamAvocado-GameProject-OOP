@@ -385,6 +385,9 @@ namespace GameProject
                         //Get Keyboard State
                         KeyboardState keyState = Keyboard.GetState();
 
+                        this.sf.Update(gameTime);
+                        this.sf.Speed = 5;
+
                         if (keyState.IsKeyDown(Keys.Escape))
                         {
                             this.enemyList.Clear();

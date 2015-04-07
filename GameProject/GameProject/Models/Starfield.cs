@@ -8,7 +8,7 @@
     public class Starfield : MovingObject, IMovableObject, IRenderable
     {
         private const float FirstCoordY = 0;
-        private const float SecondCoordY = -Game1.ScreenHeight;
+        private const float SecondCoordY = -GameEngine.ScreenHeight;
         private Vector2 secondPosition;
         private static Starfield instance = null;
 
@@ -59,10 +59,10 @@
             this.secondPosition.Y = this.secondPosition.Y + this.Speed;
 
             // Scrolling background (Repeating)
-            if (this.Position.Y >= Game1.ScreenHeight)
+            if (this.Position.Y >= GameEngine.ScreenHeight)
             {
                 this.position.Y = 0;
-                this.secondPosition.Y = -Game1.ScreenHeight;
+                this.secondPosition.Y = -GameEngine.ScreenHeight;
             }
         }
     }

@@ -50,7 +50,7 @@
 
             // update movement
             this.position.Y = this.position.Y + this.Speed;
-            if (this.position.Y >= Game1.ScreenHeight)
+            if (this.position.Y >= GameEngine.ScreenHeight)
             {
                 this.position.Y = -50;
             }

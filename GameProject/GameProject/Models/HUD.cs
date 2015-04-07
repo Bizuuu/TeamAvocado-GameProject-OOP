@@ -9,7 +9,7 @@
     public class HUD : IRenderable
     {
         public const int InititalPlayerScore = 0;
-        public const int CoordX = Game1.ScreenWidth / 2;
+        public const int CoordX = GameEngine.ScreenWidth / 2;
         public const int CoordY = 50;
         private int playerScore;
 

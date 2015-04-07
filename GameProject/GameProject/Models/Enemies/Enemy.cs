@@ -45,7 +45,7 @@
             this.position.Y += this.Speed;
 
             // Move Enemy back to top of the screen if he flies off bottom
-            if (this.Position.Y >= Game1.ScreenHeight)
+            if (this.Position.Y >= GameEngine.ScreenHeight)
             {
                 this.position.Y = 0;
             }

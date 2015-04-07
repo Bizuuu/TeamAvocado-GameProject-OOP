@@ -16,8 +16,8 @@
         private const int PlayerSpeed = 10;
         private const int PlayerBulletDelay = 5;
         private const int PlayerBulletSpeed = 10;
-        private const float InitialPlayerCoordX = Game1.ScreenWidth / 2;
-        private const float InitialPlayerCoordY = Game1.ScreenHeight - ShipHeight;        
+        private const float InitialPlayerCoordX = GameEngine.ScreenWidth / 2;
+        private const float InitialPlayerCoordY = GameEngine.ScreenHeight - ShipHeight;        
 
         //Constructor
         public Player() : base(null, new Vector2(InitialPlayerCoordX, InitialPlayerCoordY), PlayerSpeed, InitialPlayerHealth, PlayerBulletDelay)
@@ -111,10 +111,15 @@
                    this.position.Y + this.Texture.Height / 2);
                     PlayerBullet newRightBullet = new PlayerBullet(this.PlayerBulletTexture, newRightBulletPosition, PlayerBulletSpeed);
 
+                    Vector2 newBulletPosition = new Vector2(this.Position.X + this.Texture.Width / 2 - this.PlayerBulletTexture.Width / 2,
+                  this.position.Y + this.Texture.Height / 2); 
+                    PlayerBullet newBullet = new PlayerBullet(this.PlayerBulletTexture, newBulletPosition, PlayerBulletSpeed);
+
                     if (this.BulletList.Count < 20)
                     {
                         this.AddBullet(newLeftBullet);
                         this.AddBullet(newRightBullet);
+                        this.AddBullet(newBullet);
                     }
                 }
                 else
@@ -186,9 +191,9 @@
                 this.position.X = 0;
             } 
 
-            if (this.Position.X >= Game1.ScreenWidth - this.Texture.Width)
+            if (this.Position.X >= GameEngine.ScreenWidth - this.Texture.Width)
             {
-                this.position.X = Game1.ScreenWidth - this.Texture.Width;
+                this.position.X = GameEngine.ScreenWidth - this.Texture.Width;
             }
 
             if (this.Position.Y <= 0)
@@ -196,9 +201,9 @@
                 this.position.Y = 0;
             }
 
-            if (this.Position.Y >= Game1.ScreenHeight - this.Texture.Height)
+            if (this.Position.Y >= GameEngine.ScreenHeight - this.Texture.Height)
             {
-                this.position.Y = Game1.ScreenHeight - this.Texture.Height;
+                this.position.Y = GameEngine.ScreenHeight - this.Texture.Height;
             }
         }
 

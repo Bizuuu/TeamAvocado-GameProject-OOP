@@ -30,7 +30,7 @@
 
             // update movement
             this.position.X = this.position.X + this.Speed;
-            if (this.position.X >= Game1.ScreenWidth)
+            if (this.position.X >= GameEngine.ScreenWidth)
             {
                 // So they don't come so often as asteroids - correction if necessary
                 this.DestroyObject();

@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameProject.GameObjects.Ammunition" Collapsed="true">
+    <Position X="2" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAASAAAAAlgAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Ammunition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Asteroid" Collapsed="true">
+    <Position X="2" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAYAAAlgAAAAAAAAAAACAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>GameObjects\Asteroid.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.MovingObject" Collapsed="true">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAgAAAAIAABAAAAAQAAAAIAAAAAAAA=</HashCode>
+      <FileName>GameObjects\MovingObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.NormalEnemyBullet" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\NormalEnemyBullet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.PlayerBullet" Collapsed="true">
+    <Position X="2.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\PlayerBullet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Bonuses.BonusDamage" Collapsed="true">
+    <Position X="9" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAIAAAAgAAAAA=</HashCode>
+      <FileName>GameObjects\Bonuses\BonusDamage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Bonuses.BonusHealth" Collapsed="true">
+    <Position X="6.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAgAAACA=</HashCode>
+      <FileName>GameObjects\Bonuses\BonusHealth.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Bonuses.BonusObject" Collapsed="true">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAFgAAAAAAAAAAACAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>GameObjects\Bonuses\BonusObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Ships.BossEnemy" Collapsed="true">
+    <Position X="6.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgAAAAAAAAIAAAAAAAAAAQAAAAAAAAoAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Ships\BossEnemy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Ships.CommandoEnemy" Collapsed="true">
+    <Position X="8.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEACACAUAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Ships\CommandoEnemy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Ships.DefaultEnemy" Collapsed="true">
+    <Position X="10.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAAAEABAAAAAAABAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>GameObjects\Ships\DefaultEnemy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Ships.Enemy" Collapsed="true">
+    <Position X="7.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAUAEAEFAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Ships\Enemy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Ships.Player" Collapsed="true">
+    <Position X="2" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAASEAAAAZgAAgACACABAAAAwEQAACAIAAgAIACQ=</HashCode>
+      <FileName>GameObjects\Ships\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Ships.PowerEnemy" Collapsed="true">
+    <Position X="4" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAIAAAAAAAAAAAAAkAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Ships\PowerEnemy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.GameObjects.Ships.Ship" Collapsed="true">
+    <Position X="4.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAiAAEAAAABgAAAAAAAAAAACBABAAAAAAAgAAAAIg=</HashCode>
+      <FileName>GameObjects\Ships\Ship.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.SoundsAndVisuals.Explosion" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAAAAAEgAgAIAAAAAQAAAAAABAEAIAAAgEAAA=</HashCode>
+      <FileName>SoundsAndVisuals\Explosion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameProject.SoundsAndVisuals.HUD" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAAAAAAgCAAAAAAAABAAAAAAEAQAAAAAAAQIQ=</HashCode>
+      <FileName>SoundsAndVisuals\HUD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameProject.SoundsAndVisuals.Starfield" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAAAAgAAAAAAAAAAQABAAAQAAgAAAAAAQAQ=</HashCode>
+      <FileName>SoundsAndVisuals\Starfield.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameProject.SoundsAndVisuals.Sounds.SoundManager" Collapsed="true">
+    <Position X="18.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAIAAAAAEAAAAAAAAAAAAAAAAAAAAQAAABAAAAAQ=</HashCode>
+      <FileName>SoundsAndVisuals\Sounds\SoundManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameProject.SoundsAndVisuals.Sounds.SoundPublisher" Collapsed="true">
+    <Position X="16.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>SoundsAndVisuals\Sounds\SoundPublisher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameProject.SoundsAndVisuals.Sounds.SoundSubscriber" Collapsed="true">
+    <Position X="18.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SoundsAndVisuals\Sounds\SoundSubscriber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameProject.DeadPlayerException" Collapsed="true">
+    <Position X="13" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>DeadPlayerException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameProject.GameEngine" Collapsed="true">
+    <Position X="15" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CASAAQAggNgAAoAAAwAEQAEACEBEABAAQAAAwQAI4QQ=</HashCode>
+      <FileName>GameEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameProject.Program" Collapsed="true">
+    <Position X="16.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="GameProject.SoundsAndVisuals.Sounds.SoundCaller" Collapsed="true">
+    <Position X="15" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SoundsAndVisuals\Sounds\SoundCaller.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="GameProject.Interfaces.ICollidable" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICollidable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameProject.Interfaces.IControllable" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IControllable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameProject.Interfaces.IDestructable" Collapsed="true">
+    <Position X="17.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDestructable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameProject.Interfaces.IEnemy" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameProject.Interfaces.IMovableObject" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAABAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMovableObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameProject.Interfaces.IProjectile" Collapsed="true">
+    <Position X="18" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameProject.Interfaces.IRenderable" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="GameProject.Interfaces.IShooting" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Interfaces\IShooting.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GameProject.State" Collapsed="true">
+    <Position X="13" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAIAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -3,15 +3,17 @@ namespace GameProject
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using GameProject.GameObjects;
+    using GameProject.GameObjects.Bonuses;
+    using GameProject.GameObjects.Ships;
     using GameProject.Interfaces;
-    using GameProject.Models;
+    using GameProject.SoundsAndVisuals;
+    using GameProject.SoundsAndVisuals.Sounds;
     using Microsoft.Xna.Framework;
     using Microsoft.Xna.Framework.Graphics;
     using Microsoft.Xna.Framework.Input;
-    using Microsoft.Xna.Framework.Media;
-    using System.Threading;
+    using Microsoft.Xna.Framework.Media;    
 
-    //Main
     public class GameEngine : Microsoft.Xna.Framework.Game
     {
         public const int ScreenHeight = 700; 
@@ -283,19 +285,19 @@ namespace GameProject
                             if (e.BoundingBox.Intersects(this.Player.BoundingBox))
                             {
                                 SoundCaller explosionOccured = new SoundCaller(this.SM.ExplodeSound); // Event handling;
-                                this.Player.Health -= e.EnemyShipDamage/* /p.DefensePower*/;
-                                this.Player.ResetBonusEffects(); // When player is hit - attack, defense bonus are set to their initial value;
+                                this.Player.Health -= e.EnemyShipDamage;
+                                this.Player.ResetBonusEffects(); // When player is hit - attack bonus is set to its initial value;
                                 e.DestroyObject();
                             }
 
                             // Check enemy bullet collision with player ship
                             for (int i = 0; i < e.BulletList.Count; i++)
                             {
-                                if (this.Player.BoundingBox.Intersects(e.BulletList[i].BoundingBox)) // Bullets in bulletlists are accessed through their parrent class Projectile - Polymorphism;
+                                if (this.Player.BoundingBox.Intersects(e.BulletList[i].BoundingBox)) 
                                 {
-                                    this.Player.Health -= e.BulletList[i].Damage/* /p.DefensePower*/;
+                                    this.Player.Health -= e.BulletList[i].Damage;
 
-                                    // When player is hit - attack, defense bonus are set to their initial value;
+                                    // When player is hit - attack bonus is set to its initial value;
                                     this.Player.ResetBonusEffects();
                                     e.BulletList[i].DestroyObject();
                                 }
@@ -333,8 +335,8 @@ namespace GameProject
                             // if they are set visible to false
                             if (a.BoundingBox.Intersects(this.Player.BoundingBox))
                             {
-                                this.Player.Health -= a.Damage/* /p.DefensePower*/;
-                                this.Player.ResetBonusEffects(); // When player is hit - attack, defense bonus are set to their initial value;
+                                this.Player.Health -= a.Damage;
+                                this.Player.ResetBonusEffects(); // When player is hit - attack bonus is set to its initial value;
                                 a.DestroyObject();
                             }
 
@@ -362,7 +364,6 @@ namespace GameProject
                             if (bonus.BoundingBox.Intersects(this.Player.BoundingBox))
                             {
                                 bonus.DistributeBonusEffect(this.Player);
-                                // maybe display in HUD for 1 sec a text "... bonus" above/below the health bar, if someone has the time;
                                 bonus.DestroyObject();
                             }
                             

@@ -85,6 +85,7 @@
     <Compile Include="Models\Bonuses\BonusDamage.cs" />
     <Compile Include="Models\Bonuses\BonusHealth.cs" />
     <Compile Include="Models\Bonuses\BonusObject.cs" />
+    <Compile Include="Models\DeadPlayerException.cs" />
     <Compile Include="Models\Enemies\BossEnemy.cs" />
     <Compile Include="Models\Enemies\CommandoEnemy.cs" />
     <Compile Include="Models\Enemies\DefaultEnemy.cs" />

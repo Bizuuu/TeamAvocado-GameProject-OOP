@@ -370,8 +370,14 @@ namespace GameProject
                         }
 
                         // If a player health is zero - game over;
-
-                        if (this.Player.Health <= 0)
+                        try
+                        {
+                            if (this.Player.Health <= 0)
+                            {
+                                throw new DeadPlayerException(this.Player.Health);
+                            }
+                        }
+                        catch (DeadPlayerException)
                         {
                             this.GameState = State.Gameover;
                         }

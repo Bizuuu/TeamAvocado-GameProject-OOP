@@ -5,3 +5,4 @@ C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\Game
 D:\GitHub\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\obj\x86\Debug\GameProjectContent.contentprojResolveAssemblyReference.cache
 D:\Telerik\GITAvocado\GameProject\GameProjectContent\obj\x86\Debug\GameProjectContent.contentprojResolveAssemblyReference.cache
 C:\Users\Vesselin\Desktop\C# OOP\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\obj\x86\Debug\GameProjectContent.contentprojResolveAssemblyReference.cache
+C:\Users\Dminev\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\obj\x86\Debug\GameProjectContent.contentprojResolveAssemblyReference.cache

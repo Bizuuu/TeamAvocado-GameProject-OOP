@@ -32,6 +32,8 @@
 
         public Rectangle HealthRectangle { get; private set; }
 
+        public bool AttackBonusActive { get; set; }
+
         public int AttackPower { get; set; }
 
         // Could have Defense, for manipulating taken damage, if per say someone writes a BonusArmor;
@@ -42,6 +44,7 @@
             this.Texture = Content.Load<Texture2D>("ship");
             this.PlayerBulletTexture = Content.Load<Texture2D>("playerbullet");
             this.HealthTexture = Content.Load<Texture2D>("healthbar");
+            this.AttackBonusActive = false;
         }
 
         //Draw
@@ -98,18 +101,34 @@
                 // Event handling
                 SoundCaller shotFired = new SoundCaller(SoundManager.Instance.PlayerShootSound);
 
-                // Could add a BonusMissile class, and a bool variable IsBonusMissileActive - 
-                // if yes - can create Missiles, which will be a new class, with a different texture
-                // and different damage, inheriting the Projectile class;
-
-                Vector2 newBulletPosition = new Vector2(this.Position.X + this.Texture.Width / 2 - this.PlayerBulletTexture.Width / 2,
-                    this.position.Y + this.Texture.Height / 2); // maybe different values;
-                PlayerBullet newBullet = new PlayerBullet(this.PlayerBulletTexture, newBulletPosition, PlayerBulletSpeed);
-                 
-                if (this.BulletList.Count < 20)
+                if (this.AttackBonusActive)
                 {
-                    this.AddBullet(newBullet);
+                    Vector2 newLeftBulletPosition = new Vector2(this.Position.X  - this.PlayerBulletTexture.Width / 2,
+                   this.position.Y + this.Texture.Height / 2);
+                    PlayerBullet newLeftBullet = new PlayerBullet(this.PlayerBulletTexture, newLeftBulletPosition, PlayerBulletSpeed);
+
+                    Vector2 newRightBulletPosition = new Vector2(this.Position.X + this.Texture.Width  - this.PlayerBulletTexture.Width / 2,
+                   this.position.Y + this.Texture.Height / 2);
+                    PlayerBullet newRightBullet = new PlayerBullet(this.PlayerBulletTexture, newRightBulletPosition, PlayerBulletSpeed);
+
+                    if (this.BulletList.Count < 20)
+                    {
+                        this.AddBullet(newLeftBullet);
+                        this.AddBullet(newRightBullet);
+                    }
                 }
+                else
+                {
+                    Vector2 newBulletPosition = new Vector2(this.Position.X + this.Texture.Width / 2 - this.PlayerBulletTexture.Width / 2,
+                   this.position.Y + this.Texture.Height / 2); // maybe different values;
+                    PlayerBullet newBullet = new PlayerBullet(this.PlayerBulletTexture, newBulletPosition, PlayerBulletSpeed);
+
+                    if (this.BulletList.Count < 20)
+                    {
+                        this.AddBullet(newBullet);
+                    }
+                }
+               
             }
 
             // reset delay
@@ -191,7 +210,7 @@
         public void ResetBonusEffects()
         {
             this.AttackPower = InitialAttackPower;
-            // this.DefensePower = InitialDefensePower; // Eventually;
+            this.AttackBonusActive = false;
         }
     }
 }

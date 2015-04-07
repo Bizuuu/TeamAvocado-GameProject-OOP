@@ -260,6 +260,12 @@ namespace GameProject
                             MediaPlayer.Play(this.SM.BgMusic);
                         }
 
+                        if (keyState.IsKeyDown(Keys.Escape))
+                        {
+                            Environment.Exit(0);
+                        }
+
+
                         this.sf.Update(gameTime);
                         this.sf.Speed = 1;
                         break;

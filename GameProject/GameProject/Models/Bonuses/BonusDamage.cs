@@ -16,6 +16,7 @@
         public override void DistributeBonusEffect(Player p)
         {
             p.AttackPower *= DamageBoost;
+            p.AttackBonusActive = true;
         }
     }
 }

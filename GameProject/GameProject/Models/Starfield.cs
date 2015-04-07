@@ -10,24 +10,35 @@
         private const float FirstCoordY = 0;
         private const float SecondCoordY = -Game1.ScreenHeight;
         private Vector2 secondPosition;
+        private static Starfield instance = null;
 
         public const int StarfieldSpeed = 5;
 
         // Constructor
-        public Starfield(Texture2D texture, Vector2 position, int speed)
+        private Starfield(Texture2D texture, Vector2 position, int speed)
             : base(null, new Vector2(0, FirstCoordY), StarfieldSpeed)
         {
             this.secondPosition = new Vector2(0, SecondCoordY);
         }
 
-        public Starfield()
+        private Starfield()
             : this(null, new Vector2(0, FirstCoordY), StarfieldSpeed)
         {
         }
 
         public Vector2 SecondPosition { get { return this.secondPosition; } }
+ 
+        public static Starfield getInstance()
+        {
+            if (instance == null)
+            {
+                instance = new Starfield();
+            }
 
-        // Load Content 
+            return instance;
+        }
+
+        // Load Content
         public void LoadContent(ContentManager Content)
         {
             this.Texture = Content.Load<Texture2D>("space");

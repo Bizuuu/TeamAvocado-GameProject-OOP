@@ -22,7 +22,7 @@ namespace GameProject
         public const int MinBonusesInPlay = 2;        
 
         // For Veselin to incorporate Singleton with this. If not - make it an automatic prop;
-        private readonly Starfield sf = new Starfield();       
+        private readonly Starfield sf = Starfield.getInstance();       
 
         // Fields
         private readonly List<Asteroid> asteroidList;

@@ -148,3 +148,39 @@ C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\Game
 C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\PowerShip.xnb
 C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\MainScreen.xnb
 C:\Users\Tsvetan\Desktop\OOP Teamwork - Avocado\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\GameOver2.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\ship.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\space.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\asteroid.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\playerbullet.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\healthbar.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\enemyship.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\EnemyBullet.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\explosion3.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\damageBonus.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\heartBonus.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\BossShip.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\commandoShip.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\PowerShip.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\MainScreen.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\GameOver2.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\georgia.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Laser.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Blast.xnb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Content\Theme.wma
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\GameProject.exe
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\GameProject.pdb
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Microsoft.Xna.Framework.dll
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Microsoft.Xna.Framework.xml
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.csprojResolveAssemblyReference.cache
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.exe
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProject\obj\x86\Debug\GameProject.pdb

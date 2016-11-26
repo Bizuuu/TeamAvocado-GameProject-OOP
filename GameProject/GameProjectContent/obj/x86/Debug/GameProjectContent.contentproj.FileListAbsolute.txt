@@ -7,3 +7,4 @@ D:\Telerik\GITAvocado\GameProject\GameProjectContent\obj\x86\Debug\GameProjectCo
 C:\Users\Vesselin\Desktop\C# OOP\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\obj\x86\Debug\GameProjectContent.contentprojResolveAssemblyReference.cache
 C:\Users\Dminev\Desktop\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\obj\x86\Debug\GameProjectContent.contentprojResolveAssemblyReference.cache
 C:\Users\nik\Desktop\Team project1\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\obj\x86\Debug\GameProjectContent.contentprojResolveAssemblyReference.cache
+D:\Telerik2016\TeamWorks\TeamAvocado-GameProject-OOP\GameProject\GameProjectContent\obj\x86\Debug\GameProjectContent.contentprojResolveAssemblyReference.cache
